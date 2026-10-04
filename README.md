@@ -10,12 +10,7 @@ WolbaCaspian is a network of low-cost, solar-powered environmental monitoring st
 wolbacaspian/
 ├── index.html      # page markup + inline JS (nav, scroll reveal, model widget)
 ├── style.css       # all styles; palette as CSS variables in :root
-├── README.md       # this file
-└── (suggested, later)
-    ├── docs/       # methods note, calibration logs, scope document (PDF)
-    ├── firmware/   # ESP32 station firmware
-    ├── data/       # monthly CSV files, one per station: LNK-01_2026-05.csv …
-    └── model/      # suitability index and model notebooks
+└── README.md       # this file
 ```
 
 ## Editing
