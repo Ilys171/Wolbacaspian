@@ -1,711 +1,1685 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WolbaCaspian — watching the conditions that let mosquitoes breed</title>
-<meta name="description" content="WolbaCaspian: low-cost, solar-powered environmental stations in the Caspian lowlands of Azerbaijan that estimate mosquito breeding-habitat suitability.">
-<meta name="theme-color" content="#3B2314">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233B2314'/%3E%3Cellipse cx='11' cy='12' rx='7' ry='3' fill='%23F2B705' transform='rotate(-25 11 12)'/%3E%3Cellipse cx='21' cy='12' rx='7' ry='3' fill='%23F2B705' transform='rotate(25 21 12)'/%3E%3Cpath d='M16 10v14' stroke='%23FBF3E4' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
-<script>document.documentElement.classList.add('js');</script>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      WolbaCaspian — watching the conditions that let mosquitoes breed
+    </title>
+    <meta
+      name="description"
+      content="WolbaCaspian: low-cost, solar-powered environmental stations in the Caspian lowlands of Azerbaijan that estimate mosquito breeding-habitat suitability."
+    />
+    <meta name="theme-color" content="#3B2314" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233B2314'/%3E%3Cellipse cx='11' cy='12' rx='7' ry='3' fill='%23F2B705' transform='rotate(-25 11 12)'/%3E%3Cellipse cx='21' cy='12' rx='7' ry='3' fill='%23F2B705' transform='rotate(25 21 12)'/%3E%3Cpath d='M16 10v14' stroke='%23FBF3E4' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
 
-<!-- ==================== HEADER ==================== -->
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="#top" aria-label="WolbaCaspian, back to top">
-      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-        <g fill="none" stroke="#3B2314" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          <ellipse cx="10.5" cy="10" rx="7" ry="2.8" transform="rotate(-28 10.5 10)" fill="#F2B705"/>
-          <ellipse cx="21.5" cy="10" rx="7" ry="2.8" transform="rotate(28 21.5 10)" fill="#F2B705"/>
-          <path d="M16 11.5v13" stroke-width="2.6"/>
-          <circle cx="16" cy="9.6" r="2" fill="#3B2314"/>
-          <path d="M16 7.6 L16 2.5"/>
-          <path d="M15 15l-6 3-3 6M17 15l6 3 3 6M15 18l-5 5-1 6M17 18l5 5 1 6M15.2 13l-5-1-4 3M16.8 13l5-1 4 3"/>
-        </g>
-      </svg>
-      <span>WolbaCaspian</span>
-    </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span>Menu</button>
-    <nav class="nav" id="site-nav" aria-label="Sections">
-      <ul>
-        <li><a href="#problem">Problem</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#station">Station</a></li>
-        <li><a href="#method">Method</a></li>
-        <li><a href="#model">Model</a></li>
-        <li><a href="#survey">Survey</a></li>
-        <li><a href="#plan">Plan</a></li>
-        <li><a href="#vision">Vision</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main id="main">
-
-<!-- ==================== HERO ==================== -->
-<section class="hero" id="top" aria-labelledby="hero-title">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="label">Field station network · Caspian lowlands, Azerbaijan</span>
-      <h1 id="hero-title">Watching the conditions that let mosquitoes breed.</h1>
-      <p class="lede">WolbaCaspian is a network of low-cost, solar-powered stations. Each one logs air and water temperature, humidity, rainfall and standing water every 15 minutes. We turn those readings into an estimate of breeding-habitat suitability: where conditions favour mosquito larvae, and where draining, covering or removing water would help most.</p>
-      <p class="by">A student research project by Jeyla <span class="ph">[Surname]</span>, <span class="ph">[School]</span>, <span class="ph">[City]</span>.</p>
-      <div class="hero-actions">
-        <a class="btn btn--primary" href="#method">Read the methodology</a>
-        <a class="btn btn--ghost" href="#model">Try the model</a>
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="#top" aria-label="WolbaCaspian, back to top">
+          <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <g
+              fill="none"
+              stroke="#3B2314"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <ellipse
+                cx="10.5"
+                cy="10"
+                rx="7"
+                ry="2.8"
+                transform="rotate(-28 10.5 10)"
+                fill="#F2B705"
+              />
+              <ellipse
+                cx="21.5"
+                cy="10"
+                rx="7"
+                ry="2.8"
+                transform="rotate(28 21.5 10)"
+                fill="#F2B705"
+              />
+              <path d="M16 11.5v13" stroke-width="2.6" />
+              <circle cx="16" cy="9.6" r="2" fill="#3B2314" />
+              <path d="M16 7.6 L16 2.5" />
+              <path
+                d="M15 15l-6 3-3 6M17 15l6 3 3 6M15 18l-5 5-1 6M17 18l5 5 1 6M15.2 13l-5-1-4 3M16.8 13l5-1 4 3"
+              />
+            </g>
+          </svg>
+          <span>WolbaCaspian</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="bars" aria-hidden="true"></span>Menu
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Sections">
+          <ul>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#station">Station</a></li>
+            <li><a href="#method">Method</a></li>
+            <li><a href="#model">Model</a></li>
+            <li><a href="#survey">Survey</a></li>
+            <li><a href="#plan">Plan</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <dl class="spec">
-        <div><dt>Interval</dt><dd>15 min</dd></div>
-        <div><dt>Power</dt><dd>solar + 18650</dd></div>
-        <div><dt>Region</dt><dd>Lankaran · Astara · Masallı</dd></div>
-      </dl>
-    </div>
-
-    <figure class="reveal">
-      <svg viewBox="0 0 520 545" role="img" aria-labelledby="st-title st-desc">
-        <title id="st-title">Illustration of a WolbaCaspian monitoring station</title>
-        <desc id="st-desc">A station on a pole beside a pool of standing water. At the top, a tilted solar panel. On a left arm, a temperature and humidity sensor inside a stacked-plate radiation shield. On a right arm, a tipping-bucket rain gauge. Halfway down the pole, a controller box containing the ESP32, a microSD card and a real-time clock. Cables run from the box into the water to a submerged temperature probe and a pair of water-presence electrodes.</desc>
-
-        <!-- sun -->
-        <circle cx="58" cy="58" r="24" fill="#F2B705" opacity=".85"/>
-        <circle cx="58" cy="58" r="34" fill="none" stroke="#F2B705" stroke-width="1.5" stroke-dasharray="3 5"/>
-
-        <!-- ground -->
-        <path d="M0 440H250M500 440H520" stroke="#6B4226" stroke-width="2"/>
-        <g stroke="#6B4226" stroke-width="1" opacity=".5">
-          <path d="M10 448l-8 8M30 448l-8 8M50 448l-8 8M70 448l-8 8M90 448l-8 8M110 448l-8 8M130 448l-8 8M150 448l-8 8M170 448l-8 8M190 448l-8 8M210 448l-8 8M230 448l-8 8"/>
-        </g>
-
-        <!-- reeds -->
-        <g fill="none" stroke="#6B4226" stroke-width="2" stroke-linecap="round">
-          <path d="M24 440C22 400 26 370 20 340"/>
-          <path d="M38 440C40 395 36 372 44 330"/>
-          <path d="M52 440C50 410 56 390 62 372"/>
-          <path d="M14 440C10 420 6 408 2 398"/>
-        </g>
-        <rect x="16" y="318" width="8" height="26" rx="4" fill="#C2571A"/>
-        <rect x="40" y="308" width="8" height="26" rx="4" fill="#C2571A"/>
-
-        <!-- pool of standing water -->
-        <path d="M250 440Q290 507 370 507Q460 507 500 440Z" fill="#F2B705" fill-opacity=".22" stroke="#6B4226" stroke-width="2"/>
-        <path d="M256 446q12-5 24 0t24 0 24 0 24 0 24 0 24 0 24 0 24 0 24 0 12 0" fill="none" stroke="#E8741E" stroke-width="2"/>
-        <path d="M290 470q10-4 20 0t20 0M380 486q10-4 20 0t20 0" fill="none" stroke="#E8741E" stroke-width="1.2" opacity=".7"/>
-
-        <!-- pole -->
-        <rect x="196" y="74" width="8" height="368" fill="#6B4226"/>
-        <path d="M186 440h28l-5-10h-18z" fill="#3B2314"/>
-
-        <!-- solar panel -->
-        <path d="M200 96V74" stroke="#3B2314" stroke-width="4"/>
-        <path d="M128 72L268 44L276 84L136 112Z" fill="#F2B705" stroke="#3B2314" stroke-width="3" stroke-linejoin="round"/>
-        <path d="M163 65L171 105M198 58L206 98M233 51L241 91M132 92L272 64" stroke="#3B2314" stroke-width="1.5"/>
-
-        <!-- left arm + radiation shield -->
-        <path d="M196 168H100" stroke="#3B2314" stroke-width="4"/>
-        <path d="M100 168V236" stroke="#3B2314" stroke-width="2"/>
-        <g fill="#FBF3E4" stroke="#3B2314" stroke-width="2" stroke-linejoin="round">
-          <path d="M68 174H132L124 182H76Z"/>
-          <path d="M68 186H132L124 194H76Z"/>
-          <path d="M68 212H132L124 220H76Z"/>
-          <path d="M68 224H132L124 232H76Z"/>
-        </g>
-        <rect x="90" y="198" width="20" height="11" rx="2" fill="#E8741E" stroke="#3B2314" stroke-width="1.5"/>
-
-        <!-- right arm + rain gauge -->
-        <path d="M204 150H290" stroke="#3B2314" stroke-width="4"/>
-        <path d="M282 104H342L334 116H290Z" fill="#E8741E" stroke="#3B2314" stroke-width="2" stroke-linejoin="round"/>
-        <rect x="290" y="116" width="44" height="62" fill="#FBF3E4" stroke="#3B2314" stroke-width="2"/>
-        <path d="M312 116V132" stroke="#3B2314" stroke-width="1.5" stroke-dasharray="2 3"/>
-        <path d="M298 140L326 156" stroke="#C2571A" stroke-width="3" stroke-linecap="round"/>
-        <path d="M312 148l-5 10h10z" fill="#3B2314"/>
-
-        <!-- controller box -->
-        <rect x="164" y="250" width="72" height="88" rx="4" fill="#F1E2C6" stroke="#3B2314" stroke-width="2.5"/>
-        <rect x="173" y="260" width="42" height="24" rx="2" fill="#3B2314"/>
-        <text x="194" y="276" text-anchor="middle" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="9" fill="#FBF3E4">ESP32</text>
-        <circle cx="226" cy="266" r="3.5" fill="#E8741E"/>
-        <rect x="173" y="298" width="22" height="16" rx="1.5" fill="#F2B705" stroke="#3B2314" stroke-width="1.5"/>
-        <path d="M177 298v5M181 298v5M185 298v5M189 298v5" stroke="#3B2314" stroke-width="1"/>
-        <circle cx="217" cy="307" r="8" fill="#F2B705" stroke="#3B2314" stroke-width="1.5"/>
-        <circle cx="217" cy="307" r="3" fill="none" stroke="#3B2314" stroke-width="1"/>
-        <path d="M172 326h56" stroke="#6B4226" stroke-width="1" stroke-dasharray="3 3"/>
-
-        <!-- cables -->
-        <path d="M212 338C212 400 262 418 300 452L322 468" fill="none" stroke="#3B2314" stroke-width="2"/>
-        <path d="M222 338C232 382 380 372 430 418" fill="none" stroke="#3B2314" stroke-width="2"/>
-
-        <!-- water temperature probe -->
-        <rect x="320" y="463" width="34" height="11" rx="5.5" fill="#E8741E" stroke="#3B2314" stroke-width="1.8" transform="rotate(14 337 468)"/>
-
-        <!-- water presence electrodes -->
-        <rect x="422" y="414" width="26" height="8" rx="1.5" fill="#3B2314"/>
-        <path d="M429 422V476M441 422V476" stroke="#6B4226" stroke-width="3.5" stroke-linecap="round"/>
-
-        <!-- labels -->
-        <g font-family="ui-monospace,Menlo,Consolas,monospace" font-size="11" letter-spacing=".9" fill="#3B2314">
-          <g stroke="#6B4226" stroke-width="1" fill="none">
-            <path d="M262 54L294 30"/>
-            <path d="M80 174L62 158"/>
-            <path d="M342 112L352 120"/>
-            <path d="M236 268H248"/>
-            <path d="M435 414L428 402"/>
-            <path d="M340 476L338 514"/>
-          </g>
-          <g fill="#C2571A">
-            <circle cx="262" cy="54" r="2.5"/><circle cx="80" cy="174" r="2.5"/><circle cx="342" cy="112" r="2.5"/>
-            <circle cx="236" cy="268" r="2.5"/><circle cx="435" cy="414" r="2.5"/><circle cx="340" cy="476" r="2.5"/>
-          </g>
-          <text x="298" y="30">SOLAR PANEL</text>
-          <text x="10" y="138">T/RH SENSOR</text>
-          <text x="10" y="153">IN RADIATION SHIELD</text>
-          <text x="354" y="124">RAIN GAUGE</text>
-          <text x="354" y="139">TIPPING BUCKET</text>
-          <text x="252" y="264">CONTROLLER</text>
-          <text x="252" y="279">ESP32 · microSD · RTC</text>
-          <text x="368" y="384">WATER-PRESENCE</text>
-          <text x="368" y="399">ELECTRODES</text>
-          <text x="262" y="530">SUBMERGED WATER-TEMP PROBE</text>
-        </g>
-      </svg>
-      <figcaption>Fig. 1 — One station. Schematic, not to scale.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- ==================== SCOPE STRIP ==================== -->
-<section class="scope alt" aria-label="Scope">
-  <div class="wrap">
-    <div class="col reveal">
-      <span class="label">Scope / 1</span>
-      <h2>What it does</h2>
-      <ul class="ticks">
-        <li>Logs air temperature, water temperature, humidity, rainfall and standing water every 15 minutes.</li>
-        <li>Estimates breeding-habitat suitability at each monitored point.</li>
-        <li>Supports targeted, non-chemical control: drain, cover, remove.</li>
-      </ul>
-    </div>
-    <div class="col reveal">
-      <span class="label">Scope / 2</span>
-      <h2>What it is not</h2>
-      <ul class="ticks minus">
-        <li>It does not release mosquitoes or <i>Wolbachia</i>.</li>
-        <li>It does not diagnose disease.</li>
-        <li>It does not replace state surveillance.</li>
-        <li>It collects no personal data. There are no cameras.</li>
-      </ul>
-    </div>
-    <div class="col reveal">
-      <span class="label">Scope / 3</span>
-      <h2>Where</h2>
-      <p>The Caspian lowlands of Azerbaijan: the Lankaran, Astara and Masallı region.</p>
-      <svg class="map" viewBox="0 0 240 250" role="img" aria-labelledby="map-title">
-        <title id="map-title">Schematic map: Masallı inland, Lankaran and Astara on the Caspian coast, Astara at the border with Iran. Not to scale.</title>
-        <defs>
-          <pattern id="seaHatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-            <line x1="0" y1="0" x2="0" y2="7" stroke="#E8741E" stroke-width="1.4" opacity=".45"/>
-          </pattern>
-        </defs>
-        <path d="M150 0C160 60 176 110 166 150C159 180 168 210 171 250H240V0Z" fill="url(#seaHatch)"/>
-        <path d="M150 0C160 60 176 110 166 150C159 180 168 210 171 250" fill="none" stroke="#3B2314" stroke-width="2"/>
-        <path d="M20 232H170" stroke="#6B4226" stroke-width="1.5" stroke-dasharray="5 4"/>
-        <g font-family="ui-monospace,Menlo,Consolas,monospace" font-size="10.5" fill="#3B2314" letter-spacing=".6">
-          <circle cx="98" cy="96" r="5" fill="#F2B705" stroke="#3B2314" stroke-width="1.5"/>
-          <text x="38" y="84">MASALLI</text>
-          <circle cx="160" cy="140" r="5" fill="#E8741E" stroke="#3B2314" stroke-width="1.5"/>
-          <text x="80" y="144">LANKARAN</text>
-          <circle cx="166" cy="224" r="5" fill="#F2B705" stroke="#3B2314" stroke-width="1.5"/>
-          <text x="104" y="216">ASTARA</text>
-          <text x="20" y="246" fill="#6B4226">IRAN</text>
-          <text x="214" y="70" transform="rotate(90 214 70)" fill="#6B4226">CASPIAN SEA</text>
-        </g>
-      </svg>
-      <p class="label" style="margin-top:8px">Schematic · not to scale</p>
-      <p style="font-size:.95rem;margin-top:10px">Developed by Jeyla <span class="ph">[Surname]</span>, <span class="ph">[School]</span>, <span class="ph">[City]</span>.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== 01 PROBLEM ==================== -->
-<section id="problem" aria-labelledby="problem-title">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-num"><span class="n">01</span><span class="rule"></span><span class="label">Problem</span></div>
-      <h2 id="problem-title">Warm, humid, low-lying and full of water.</h2>
-      <p class="lede">The Caspian lowland districts of Azerbaijan have irrigation channels, rice fields and dense settlement side by side. Mosquito activity there is persistent through the warm season.</p>
     </header>
 
-    <div class="reveal">
-      <span class="label">Districts in the lowland belt</span>
-      <ul class="chips" style="margin-top:10px">
-        <li>Lankaran</li><li>Astara</li><li>Masallı</li><li>Neftçala</li><li>Salyan</li><li>coastal strip</li>
-      </ul>
-    </div>
+    <main id="main">
+      <!-- ==================== HERO ==================== -->
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="wrap">
+          <div class="reveal">
+            <span class="label"
+              >Field station network · Caspian lowlands, Azerbaijan</span
+            >
+            <h1 id="hero-title">
+              Watching the conditions that let mosquitoes breed.
+            </h1>
+            <p class="lede">
+              WolbaCaspian is a network of low-cost, solar-powered stations.
+              Each one logs air and water temperature, humidity, rainfall and
+              standing water every 15 minutes. We turn those readings into an
+              estimate of breeding-habitat suitability: where conditions favour
+              mosquito larvae, and where draining, covering or removing water
+              would help most.
+            </p>
+            <p class="by">
+              A student research project by Jeyla Ahmadzada, Ilyas Taghiyev,
+              Youssef El Haroun, Mikayil Ahmadbayli and Vahid Musayev.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn--primary" href="#method"
+                >Read the methodology</a
+              >
+              <a class="btn btn--ghost" href="#model">Try the model</a>
+            </div>
+            <dl class="spec">
+              <div>
+                <dt>Interval</dt>
+                <dd>15 min</dd>
+              </div>
+              <div>
+                <dt>Power</dt>
+                <dd>solar + 18650</dd>
+              </div>
+              <div>
+                <dt>Region</dt>
+                <dd>Lankaran · Astara · Masallı</dd>
+              </div>
+            </dl>
+          </div>
 
-    <div class="sub">
-      <span class="label reveal">Three vector groups</span>
-      <div class="three" style="margin-top:14px">
-        <article class="card vector reveal">
-          <span class="label">Historical</span>
-          <h3 class="genus"><i>Anopheles</i></h3>
-          <span class="assoc">Malaria</span>
-          <p>Historically the dominant vector in the region. There has been no local malaria transmission for years, but the ecology that supported it remains.</p>
-        </article>
-        <article class="card vector reveal">
-          <span class="label">Current</span>
-          <h3 class="genus"><i>Culex</i></h3>
-          <span class="assoc">West Nile virus</span>
-          <p>The main carrier of current arbovirus risk in the wider region.</p>
-        </article>
-        <article class="card vector reveal">
-          <span class="label">Invasive</span>
-          <h3 class="genus"><i>Aedes albopictus</i> / <i>Ae. aegypti</i></h3>
-          <span class="assoc">Dengue · chikungunya · Zika</span>
-          <p>Expanding through the Caucasus as the climate warms, and documented at points of entry.</p>
-        </article>
-      </div>
-    </div>
+          <figure class="reveal">
+            <svg
+              viewBox="0 0 520 545"
+              role="img"
+              aria-labelledby="st-title st-desc"
+            >
+              <title id="st-title">
+                Illustration of a WolbaCaspian monitoring station
+              </title>
+              <desc id="st-desc">
+                A station on a pole beside a pool of standing water. At the top,
+                a tilted solar panel. On a left arm, a temperature and humidity
+                sensor inside a stacked-plate radiation shield. On a right arm,
+                a tipping-bucket rain gauge. Halfway down the pole, a controller
+                box containing the ESP32, a microSD card and a real-time clock.
+                Cables run from the box into the water to a submerged
+                temperature probe and a pair of water-presence electrodes.
+              </desc>
 
-    <div class="sub two">
-      <div class="reveal">
-        <span class="label">Working assumptions</span>
-        <h3>Which species we plan for</h3>
-        <p>For the lowland we work with three species: <i>Culex pipiens</i>, <i>Anopheles sacharovi</i> and <i>Aedes caspius</i>. Invasive <i>Aedes</i> are monitored as a possible newcomer.</p>
-        <p>These are assumptions for specialists to check, not findings. Correcting them is part of the plan (see <a href="#contact">the request to specialists</a>).</p>
-      </div>
-      <div class="reveal">
-        <span class="label">How it is controlled now</span>
-        <h3>Repeated chemical spraying</h3>
-        <ul class="ticks dash">
-          <li>It is costly to repeat.</li>
-          <li>It drives insecticide resistance.</li>
-          <li>It harms non-target species.</li>
-          <li>There is no fine-grained picture of <em>where</em> and <em>when</em> conditions favour breeding, so spraying is broad rather than targeted.</li>
-        </ul>
-      </div>
-    </div>
+              <!-- sun -->
+              <circle cx="58" cy="58" r="24" fill="#F2B705" opacity=".85" />
+              <circle
+                cx="58"
+                cy="58"
+                r="34"
+                fill="none"
+                stroke="#F2B705"
+                stroke-width="1.5"
+                stroke-dasharray="3 5"
+              />
 
-    <aside class="sub callout callout--honey reveal" aria-label="Climate context">
-      <span class="label">Climate</span>
-      <h3>A longer season and a wider range</h3>
-      <p style="margin:0">Warming lengthens the mosquito season and widens the area of suitable habitat. Azerbaijan hosted COP29 in Baku in November 2024. WolbaCaspian is a small piece of climate-adaptation infrastructure for public health: local, low-cost and measurable.</p>
-    </aside>
-  </div>
-</section>
+              <!-- ground -->
+              <path
+                d="M0 440H250M500 440H520"
+                stroke="#6B4226"
+                stroke-width="2"
+              />
+              <g stroke="#6B4226" stroke-width="1" opacity=".5">
+                <path
+                  d="M10 448l-8 8M30 448l-8 8M50 448l-8 8M70 448l-8 8M90 448l-8 8M110 448l-8 8M130 448l-8 8M150 448l-8 8M170 448l-8 8M190 448l-8 8M210 448l-8 8M230 448l-8 8"
+                />
+              </g>
 
-<!-- ==================== 02 PROJECT ==================== -->
-<section id="project" class="alt" aria-labelledby="project-title">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-num"><span class="n">02</span><span class="rule"></span><span class="label">Project</span></div>
-      <h2 id="project-title">From a reading to a decision, in four steps.</h2>
-      <p class="lede">Each step is simple on its own. Together they turn temperature, water and rain into a short list of places worth checking this week.</p>
-    </header>
+              <!-- reeds -->
+              <g
+                fill="none"
+                stroke="#6B4226"
+                stroke-width="2"
+                stroke-linecap="round"
+              >
+                <path d="M24 440C22 400 26 370 20 340" />
+                <path d="M38 440C40 395 36 372 44 330" />
+                <path d="M52 440C50 410 56 390 62 372" />
+                <path d="M14 440C10 420 6 408 2 398" />
+              </g>
+              <rect
+                x="16"
+                y="318"
+                width="8"
+                height="26"
+                rx="4"
+                fill="#C2571A"
+              />
+              <rect
+                x="40"
+                y="308"
+                width="8"
+                height="26"
+                rx="4"
+                fill="#C2571A"
+              />
 
-    <ol class="pipeline">
-      <li class="reveal">
-        <span class="step-n">STEP 01</span>
-        <h3>Measure</h3>
-        <p>Every 15 minutes, each station records air and water temperature, humidity, rainfall and standing water, with a timestamp and location.</p>
-      </li>
-      <li class="reveal">
-        <span class="step-n">STEP 02</span>
-        <h3>Store</h3>
-        <p>Readings are written to microSD first, then uploaded over Wi-Fi or GSM. The connection can drop; the data does not.</p>
-      </li>
-      <li class="reveal">
-        <span class="step-n">STEP 03</span>
-        <h3>Estimate</h3>
-        <p>Readings are compared with published development thresholds to produce a transparent suitability index: low, medium or high.</p>
-      </li>
-      <li class="reveal">
-        <span class="step-n">STEP 04</span>
-        <h3>Act</h3>
-        <p>A map and trend view show which areas are becoming favourable, so ditches, containers and tyres can be drained, covered or removed.</p>
-      </li>
-    </ol>
+              <!-- pool of standing water -->
+              <path
+                d="M250 440Q290 507 370 507Q460 507 500 440Z"
+                fill="#F2B705"
+                fill-opacity=".22"
+                stroke="#6B4226"
+                stroke-width="2"
+              />
+              <path
+                d="M256 446q12-5 24 0t24 0 24 0 24 0 24 0 24 0 24 0 24 0 24 0 12 0"
+                fill="none"
+                stroke="#E8741E"
+                stroke-width="2"
+              />
+              <path
+                d="M290 470q10-4 20 0t20 0M380 486q10-4 20 0t20 0"
+                fill="none"
+                stroke="#E8741E"
+                stroke-width="1.2"
+                opacity=".7"
+              />
 
-    <div class="sub two">
-      <article class="card decision reveal">
-        <span class="label">Design decision A</span>
-        <h3>Fixed stations, not drones</h3>
-        <p style="margin:0">Drones give short, weather-dependent snapshots. A fixed station gives a continuous, 24/7, all-weather time series, which is the kind of record a model needs.</p>
-      </article>
-      <article class="card decision reveal">
-        <span class="label">Design decision B</span>
-        <h3>Biology first, algorithms second</h3>
-        <p style="margin:0">Every sensor must connect to larval development in one sentence. The model starts as transparent rules and moves to statistics and machine learning only as far as labelled field data allows.</p>
-      </article>
-    </div>
-  </div>
-</section>
+              <!-- pole -->
+              <rect x="196" y="74" width="8" height="368" fill="#6B4226" />
+              <path d="M186 440h28l-5-10h-18z" fill="#3B2314" />
 
-<!-- ==================== 03 STATION ==================== -->
-<section id="station" aria-labelledby="station-title">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-num"><span class="n">03</span><span class="rule"></span><span class="label">Station</span></div>
-      <h2 id="station-title">One station: five measurements, one local log.</h2>
-      <p class="lede">Off-the-shelf parts, chosen so that each reading is stable enough to trust and simple enough to repair in the field.</p>
-    </header>
+              <!-- solar panel -->
+              <path d="M200 96V74" stroke="#3B2314" stroke-width="4" />
+              <path
+                d="M128 72L268 44L276 84L136 112Z"
+                fill="#F2B705"
+                stroke="#3B2314"
+                stroke-width="3"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M163 65L171 105M198 58L206 98M233 51L241 91M132 92L272 64"
+                stroke="#3B2314"
+                stroke-width="1.5"
+              />
 
-    <figure class="reveal">
-      <div class="fig-scroll">
-        <svg viewBox="0 0 760 370" role="img" aria-labelledby="bd-title bd-desc">
-          <title id="bd-title">Block diagram of a station</title>
-          <desc id="bd-desc">Four sensors (SHT31 for air temperature and humidity, a tipping-bucket rain gauge with reed switch, water-presence electrodes or a capacitive level sensor, and a DS18B20 water temperature probe) feed an ESP32 controller. The controller keeps time with a DS3231 real-time clock and writes CSV files to microSD, then uploads over Wi-Fi or GSM to a server that produces the map and trend view. Power comes from a 6 volt solar panel through a charge controller into an 18650 cell.</desc>
-          <defs>
-            <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-              <path d="M0 0L10 5L0 10z" fill="#3B2314"/>
-            </marker>
-            <marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-              <path d="M0 0L10 5L0 10z" fill="#C2571A"/>
-            </marker>
-          </defs>
-          <g font-family="ui-monospace,Menlo,Consolas,monospace">
-            <text x="20" y="20" font-size="10.5" letter-spacing="1.4" fill="#6B4226">SENSORS</text>
-            <text x="290" y="20" font-size="10.5" letter-spacing="1.4" fill="#6B4226">CONTROLLER</text>
-            <text x="560" y="20" font-size="10.5" letter-spacing="1.4" fill="#6B4226">DATA</text>
-            <text x="20" y="302" font-size="10.5" letter-spacing="1.4" fill="#6B4226">POWER</text>
+              <!-- left arm + radiation shield -->
+              <path d="M196 168H100" stroke="#3B2314" stroke-width="4" />
+              <path d="M100 168V236" stroke="#3B2314" stroke-width="2" />
+              <g
+                fill="#FBF3E4"
+                stroke="#3B2314"
+                stroke-width="2"
+                stroke-linejoin="round"
+              >
+                <path d="M68 174H132L124 182H76Z" />
+                <path d="M68 186H132L124 194H76Z" />
+                <path d="M68 212H132L124 220H76Z" />
+                <path d="M68 224H132L124 232H76Z" />
+              </g>
+              <rect
+                x="90"
+                y="198"
+                width="20"
+                height="11"
+                rx="2"
+                fill="#E8741E"
+                stroke="#3B2314"
+                stroke-width="1.5"
+              />
 
-            <!-- sensors -->
-            <g stroke="#3B2314" stroke-width="1.5" fill="#FBF3E4">
-              <rect x="20" y="30" width="190" height="50" rx="3"/>
-              <rect x="20" y="95" width="190" height="50" rx="3"/>
-              <rect x="20" y="160" width="190" height="50" rx="3"/>
-              <rect x="20" y="225" width="190" height="50" rx="3"/>
-            </g>
-            <g font-size="12.5" fill="#3B2314" font-weight="700">
-              <text x="32" y="52">SHT31</text>
-              <text x="32" y="117">Tipping bucket</text>
-              <text x="32" y="182">Electrodes / capacitive</text>
-              <text x="32" y="247">DS18B20</text>
-            </g>
-            <g font-size="11" fill="#6B4226">
-              <text x="32" y="69">air temperature · RH</text>
-              <text x="32" y="134">rainfall · reed switch</text>
-              <text x="32" y="199">standing water 0/1</text>
-              <text x="32" y="264">water temperature</text>
-            </g>
-            <g stroke="#3B2314" stroke-width="1.6" fill="none" marker-end="url(#ah)">
-              <path d="M210 55H286"/>
-              <path d="M210 120H286"/>
-              <path d="M210 185H286"/>
-              <path d="M210 250H286"/>
-            </g>
+              <!-- right arm + rain gauge -->
+              <path d="M204 150H290" stroke="#3B2314" stroke-width="4" />
+              <path
+                d="M282 104H342L334 116H290Z"
+                fill="#E8741E"
+                stroke="#3B2314"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+              <rect
+                x="290"
+                y="116"
+                width="44"
+                height="62"
+                fill="#FBF3E4"
+                stroke="#3B2314"
+                stroke-width="2"
+              />
+              <path
+                d="M312 116V132"
+                stroke="#3B2314"
+                stroke-width="1.5"
+                stroke-dasharray="2 3"
+              />
+              <path
+                d="M298 140L326 156"
+                stroke="#C2571A"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <path d="M312 148l-5 10h10z" fill="#3B2314" />
 
-            <!-- controller -->
-            <rect x="290" y="40" width="190" height="232" rx="4" fill="#3B2314"/>
-            <text x="308" y="76" font-size="20" font-weight="700" fill="#FBF3E4">ESP32</text>
-            <text x="308" y="98" font-size="11" fill="#F1E2C6">wake · read ×5 · median</text>
-            <text x="308" y="116" font-size="11" fill="#F1E2C6">deep sleep between cycles</text>
-            <rect x="304" y="180" width="80" height="44" rx="3" fill="#F2B705"/>
-            <rect x="392" y="180" width="76" height="44" rx="3" fill="#F2B705"/>
-            <g font-size="11" fill="#3B2314">
-              <text x="314" y="199" font-weight="700">DS3231</text>
-              <text x="314" y="214">RTC</text>
-              <text x="402" y="199" font-weight="700">microSD</text>
-              <text x="402" y="214">CSV log</text>
-            </g>
-            <text x="308" y="252" font-size="10.5" fill="#F2B705">local log first, always</text>
+              <!-- controller box -->
+              <rect
+                x="164"
+                y="250"
+                width="72"
+                height="88"
+                rx="4"
+                fill="#F1E2C6"
+                stroke="#3B2314"
+                stroke-width="2.5"
+              />
+              <rect
+                x="173"
+                y="260"
+                width="42"
+                height="24"
+                rx="2"
+                fill="#3B2314"
+              />
+              <text
+                x="194"
+                y="276"
+                text-anchor="middle"
+                font-family="ui-monospace,Menlo,Consolas,monospace"
+                font-size="9"
+                fill="#FBF3E4"
+              >
+                ESP32
+              </text>
+              <circle cx="226" cy="266" r="3.5" fill="#E8741E" />
+              <rect
+                x="173"
+                y="298"
+                width="22"
+                height="16"
+                rx="1.5"
+                fill="#F2B705"
+                stroke="#3B2314"
+                stroke-width="1.5"
+              />
+              <path
+                d="M177 298v5M181 298v5M185 298v5M189 298v5"
+                stroke="#3B2314"
+                stroke-width="1"
+              />
+              <circle
+                cx="217"
+                cy="307"
+                r="8"
+                fill="#F2B705"
+                stroke="#3B2314"
+                stroke-width="1.5"
+              />
+              <circle
+                cx="217"
+                cy="307"
+                r="3"
+                fill="none"
+                stroke="#3B2314"
+                stroke-width="1"
+              />
+              <path
+                d="M172 326h56"
+                stroke="#6B4226"
+                stroke-width="1"
+                stroke-dasharray="3 3"
+              />
 
-            <!-- data -->
-            <rect x="560" y="70" width="180" height="60" rx="3" fill="#FBF3E4" stroke="#3B2314" stroke-width="1.5"/>
-            <text x="574" y="96" font-size="12.5" font-weight="700" fill="#3B2314">Wi-Fi / GSM</text>
-            <text x="574" y="114" font-size="11" fill="#6B4226">≤ 20 s · ≤ 3 tries</text>
-            <rect x="560" y="180" width="180" height="60" rx="3" fill="#F1E2C6" stroke="#3B2314" stroke-width="1.5"/>
-            <text x="574" y="206" font-size="12.5" font-weight="700" fill="#3B2314">Server</text>
-            <text x="574" y="224" font-size="11" fill="#6B4226">index · map · trends</text>
-            <path d="M480 100H556" stroke="#3B2314" stroke-width="1.6" marker-end="url(#ah)"/>
-            <path d="M650 130V176" stroke="#3B2314" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#ah)"/>
+              <!-- cables -->
+              <path
+                d="M212 338C212 400 262 418 300 452L322 468"
+                fill="none"
+                stroke="#3B2314"
+                stroke-width="2"
+              />
+              <path
+                d="M222 338C232 382 380 372 430 418"
+                fill="none"
+                stroke="#3B2314"
+                stroke-width="2"
+              />
 
-            <!-- power -->
-            <g stroke="#C2571A" stroke-width="1.5" fill="#FBF3E4">
-              <rect x="20" y="310" width="170" height="46" rx="3"/>
-              <rect x="226" y="310" width="170" height="46" rx="3"/>
-              <rect x="430" y="310" width="150" height="46" rx="3"/>
-            </g>
-            <g font-size="11.5" fill="#3B2314">
-              <text x="32" y="331" font-weight="700">Solar panel</text>
-              <text x="32" y="347">6 V · 3–5 W</text>
-              <text x="238" y="331" font-weight="700">Charge controller</text>
-              <text x="238" y="347">regulates charging</text>
-              <text x="442" y="331" font-weight="700">18650 cell</text>
-              <text x="442" y="347">overnight supply</text>
-            </g>
-            <g stroke="#C2571A" stroke-width="1.8" fill="none" marker-end="url(#ah2)">
-              <path d="M190 333H222"/>
-              <path d="M396 333H426"/>
-              <path d="M455 310V276"/>
-            </g>
-          </g>
-        </svg>
-      </div>
-      <figcaption>Fig. 2 — Station block diagram. Arrows show data (dark) and power (orange). On narrow screens, scroll sideways.</figcaption>
-    </figure>
+              <!-- water temperature probe -->
+              <rect
+                x="320"
+                y="463"
+                width="34"
+                height="11"
+                rx="5.5"
+                fill="#E8741E"
+                stroke="#3B2314"
+                stroke-width="1.8"
+                transform="rotate(14 337 468)"
+              />
 
-    <div class="sub reveal">
-      <span class="label">Table 1</span>
-      <h3>What is measured, and why</h3>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th scope="col">Variable</th><th scope="col">Unit</th><th scope="col">Why it matters for larvae</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Air temperature</th><td class="num">°C</td><td>Sets the speed of larval development; the basis for degree-days and cycle length.</td></tr>
-            <tr><th scope="row">Relative humidity</th><td class="num">%</td><td>Affects adult survival and how fast small water bodies dry out.</td></tr>
-            <tr><th scope="row">Rainfall</th><td class="num">mm</td><td>Fills breeding sites. Intensity matters: heavy rain can flush larvae out.</td></tr>
-            <tr><th scope="row">Standing water</th><td class="num">0 / 1</td><td>A direct indicator that a breeding site exists. The most informative single feature.</td></tr>
-            <tr><th scope="row">Water temperature</th><td class="num">°C</td><td>Larvae develop at water temperature, not air temperature.</td></tr>
-            <tr><th scope="row">Battery voltage</th><td class="num">V</td><td>A service variable. Separates a “measured zero” from “the station is dead”.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+              <!-- water presence electrodes -->
+              <rect
+                x="422"
+                y="414"
+                width="26"
+                height="8"
+                rx="1.5"
+                fill="#3B2314"
+              />
+              <path
+                d="M429 422V476M441 422V476"
+                stroke="#6B4226"
+                stroke-width="3.5"
+                stroke-linecap="round"
+              />
 
-    <div class="sub reveal">
-      <span class="label">Table 2</span>
-      <h3>Hardware</h3>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th scope="col">Node</th><th scope="col">Component</th><th scope="col">Reason</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Controller</th><td class="num">ESP32</td><td>Built-in Wi-Fi and a deep-sleep mode for low power use.</td></tr>
-            <tr><th scope="row">Temperature + humidity</th><td><span class="num">SHT31</span> <small>(alt. <span class="num">BME280</span>)</small></td><td>Better humidity accuracy and less drift than DHT-class sensors.</td></tr>
-            <tr><th scope="row">Rainfall</th><td>Tipping-bucket gauge with reed switch</td><td>Measures amount. Resistive rain plates only detect that something is wet.</td></tr>
-            <tr><th scope="row">Standing water</th><td>Stainless electrodes with alternating polarity, or capacitive level sensor</td><td>Prevents electrolysis, which corrodes electrodes and corrupts readings.</td></tr>
-            <tr><th scope="row">Water temperature</th><td>Waterproof <span class="num">DS18B20</span></td><td>Placed in the breeding site itself.</td></tr>
-            <tr><th scope="row">Clock</th><td class="num">DS3231 RTC</td><td>Keeps accurate timestamps even when the network is down.</td></tr>
-            <tr><th scope="row">Storage</th><td>microSD, plain CSV</td><td>The local log is mandatory; upload is a copy, not the original.</td></tr>
-            <tr><th scope="row">Power</th><td>6 V 3–5 W solar panel, charge controller, 18650 cell</td><td>Runs without mains power at field sites.</td></tr>
-            <tr><th scope="row">Housing</th><td>IP65 box + ventilated radiation shield</td><td>Stops a sun-heated box from corrupting temperature data.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+              <!-- labels -->
+              <g
+                font-family="ui-monospace,Menlo,Consolas,monospace"
+                font-size="11"
+                letter-spacing=".9"
+                fill="#3B2314"
+              >
+                <g stroke="#6B4226" stroke-width="1" fill="none">
+                  <path d="M262 54L294 30" />
+                  <path d="M80 174L62 158" />
+                  <path d="M342 112L352 120" />
+                  <path d="M236 268H248" />
+                  <path d="M435 414L428 402" />
+                  <path d="M340 476L338 514" />
+                </g>
+                <g fill="#C2571A">
+                  <circle cx="262" cy="54" r="2.5" />
+                  <circle cx="80" cy="174" r="2.5" />
+                  <circle cx="342" cy="112" r="2.5" />
+                  <circle cx="236" cy="268" r="2.5" />
+                  <circle cx="435" cy="414" r="2.5" />
+                  <circle cx="340" cy="476" r="2.5" />
+                </g>
+                <text x="298" y="30">SOLAR PANEL</text>
+                <text x="10" y="138">T/RH SENSOR</text>
+                <text x="10" y="153">IN RADIATION SHIELD</text>
+                <text x="354" y="124">RAIN GAUGE</text>
+                <text x="354" y="139">TIPPING BUCKET</text>
+                <text x="252" y="264">CONTROLLER</text>
+                <text x="252" y="279">ESP32 · microSD · RTC</text>
+                <text x="368" y="384">WATER-PRESENCE</text>
+                <text x="368" y="399">ELECTRODES</text>
+                <text x="262" y="530">SUBMERGED WATER-TEMP PROBE</text>
+              </g>
+            </svg>
+            <figcaption>
+              Fig. 1 — One station. Schematic, not to scale.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
-    <aside class="sub callout reveal" aria-labelledby="placement-title">
-      <span class="label">Placement rules</span>
-      <h3 id="placement-title">Where a station goes</h3>
-      <ul class="ticks">
-        <li>Air sensor <span class="num">1.5–2 m</span> above the ground.</li>
-        <li>Not over asphalt or concrete, and not next to walls.</li>
-        <li>Within <span class="num">300–500 m</span> of the breeding sites being monitored.</li>
-        <li>Shield oriented so that direct sun never reaches the sensor.</li>
-      </ul>
-    </aside>
+      <!-- ==================== SCOPE STRIP ==================== -->
+      <section class="scope alt" aria-label="Scope">
+        <div class="wrap">
+          <div class="col reveal">
+            <span class="label">Scope / 1</span>
+            <h2>What it does</h2>
+            <ul class="ticks">
+              <li>
+                Logs air temperature, water temperature, humidity, rainfall and
+                standing water every 15 minutes.
+              </li>
+              <li>
+                Estimates breeding-habitat suitability at each monitored point.
+              </li>
+              <li>
+                Supports targeted, non-chemical control: drain, cover, remove.
+              </li>
+            </ul>
+          </div>
+          <div class="col reveal">
+            <span class="label">Scope / 2</span>
+            <h2>What it is not</h2>
+            <ul class="ticks minus">
+              <li>It does not release mosquitoes or <i>Wolbachia</i>.</li>
+              <li>It does not diagnose disease.</li>
+              <li>It does not replace state surveillance.</li>
+              <li>It collects no personal data. There are no cameras.</li>
+            </ul>
+          </div>
+          <div class="col reveal">
+            <span class="label">Scope / 3</span>
+            <h2>Where</h2>
+            <p>
+              The Caspian lowlands of Azerbaijan: the Lankaran, Astara and
+              Masallı region.
+            </p>
+            <svg
+              class="map"
+              viewBox="0 0 240 250"
+              role="img"
+              aria-labelledby="map-title"
+            >
+              <title id="map-title">
+                Schematic map: Masallı inland, Lankaran and Astara on the
+                Caspian coast, Astara at the border with Iran. Not to scale.
+              </title>
+              <defs>
+                <pattern
+                  id="seaHatch"
+                  width="7"
+                  height="7"
+                  patternUnits="userSpaceOnUse"
+                  patternTransform="rotate(45)"
+                >
+                  <line
+                    x1="0"
+                    y1="0"
+                    x2="0"
+                    y2="7"
+                    stroke="#E8741E"
+                    stroke-width="1.4"
+                    opacity=".45"
+                  />
+                </pattern>
+              </defs>
+              <path
+                d="M150 0C160 60 176 110 166 150C159 180 168 210 171 250H240V0Z"
+                fill="url(#seaHatch)"
+              />
+              <path
+                d="M150 0C160 60 176 110 166 150C159 180 168 210 171 250"
+                fill="none"
+                stroke="#3B2314"
+                stroke-width="2"
+              />
+              <path
+                d="M20 232H170"
+                stroke="#6B4226"
+                stroke-width="1.5"
+                stroke-dasharray="5 4"
+              />
+              <g
+                font-family="ui-monospace,Menlo,Consolas,monospace"
+                font-size="10.5"
+                fill="#3B2314"
+                letter-spacing=".6"
+              >
+                <circle
+                  cx="98"
+                  cy="96"
+                  r="5"
+                  fill="#F2B705"
+                  stroke="#3B2314"
+                  stroke-width="1.5"
+                />
+                <text x="38" y="84">MASALLI</text>
+                <circle
+                  cx="160"
+                  cy="140"
+                  r="5"
+                  fill="#E8741E"
+                  stroke="#3B2314"
+                  stroke-width="1.5"
+                />
+                <text x="80" y="144">LANKARAN</text>
+                <circle
+                  cx="166"
+                  cy="224"
+                  r="5"
+                  fill="#F2B705"
+                  stroke="#3B2314"
+                  stroke-width="1.5"
+                />
+                <text x="104" y="216">ASTARA</text>
+                <text x="20" y="246" fill="#6B4226">IRAN</text>
+                <text
+                  x="214"
+                  y="70"
+                  transform="rotate(90 214 70)"
+                  fill="#6B4226"
+                >
+                  CASPIAN SEA
+                </text>
+              </g>
+            </svg>
+            <p class="label" style="margin-top: 8px">
+              Schematic · not to scale
+            </p>
+            <p style="font-size: 0.95rem; margin-top: 10px">
+              Developed by Jeyla Ahmadzada, Ilyas Taghiyev, Youssef El Haroun,
+              Mikayil Ahmadbayli and Vahid Musayev.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <div class="sub two">
-      <div class="reveal">
-        <span class="label">Data format</span>
-        <h3>Plain CSV, one file per station per month</h3>
-        <ul class="ticks dash">
-          <li>Timestamps are in UTC.</li>
-          <li>A missing value is an empty field, <strong>never zero</strong>. Zero is a measurement.</li>
-          <li>Battery voltage, signal strength (<span class="num">rssi</span>) and firmware version travel with every row.</li>
-        </ul>
-      </div>
-      <div class="reveal">
-        <span class="label">Firmware cycle</span>
-        <h3>Every 15 minutes</h3>
-        <ol class="chain" aria-label="Firmware cycle">
-          <li><span>wake</span></li>
-          <li><span>5 readings</span></li>
-          <li><span>median</span></li>
-          <li><span>write to SD</span></li>
-          <li><span>upload ≤20 s, ≤3 tries</span></li>
-          <li><span>deep sleep</span></li>
-        </ol>
-        <p style="margin-top:14px;font-size:.95rem;color:var(--chestnut)">The median of five readings removes single-sample spikes. The upload is time-limited so a weak signal cannot drain the battery.</p>
-      </div>
-    </div>
+      <!-- ==================== 01 PROBLEM ==================== -->
+      <section id="problem" aria-labelledby="problem-title">
+        <div class="wrap">
+          <header class="sec-head reveal">
+            <div class="sec-num">
+              <span class="n">01</span><span class="rule"></span
+              ><span class="label">Problem</span>
+            </div>
+            <h2 id="problem-title">
+              Warm, humid, low-lying and full of water.
+            </h2>
+            <p class="lede">
+              The Caspian lowland districts of Azerbaijan have irrigation
+              channels, rice fields and dense settlement side by side. Mosquito
+              activity there is persistent through the warm season.
+            </p>
+          </header>
 
-    <figure class="sub reveal">
-      <div class="code-head"><span>LNK-01 · sample rows</span><span>csv</span></div>
-<pre class="code" tabindex="0" aria-label="Sample CSV data"><span class="h">station_id,timestamp_utc,t_air_c,rh_pct,rain_mm,water_present,t_water_c,battery_v,rssi,fw_ver</span>
+          <div class="reveal">
+            <span class="label">Districts in the lowland belt</span>
+            <ul class="chips" style="margin-top: 10px">
+              <li>Lankaran</li>
+              <li>Astara</li>
+              <li>Masallı</li>
+              <li>Neftçala</li>
+              <li>Salyan</li>
+              <li>coastal strip</li>
+            </ul>
+          </div>
+
+          <div class="sub">
+            <span class="label reveal">Three vector groups</span>
+            <div class="three" style="margin-top: 14px">
+              <article class="card vector reveal">
+                <span class="label">Historical</span>
+                <h3 class="genus"><i>Anopheles</i></h3>
+                <span class="assoc">Malaria</span>
+                <p>
+                  Historically the dominant vector in the region. There has been
+                  no local malaria transmission for years, but the ecology that
+                  supported it remains.
+                </p>
+              </article>
+              <article class="card vector reveal">
+                <span class="label">Current</span>
+                <h3 class="genus"><i>Culex</i></h3>
+                <span class="assoc">West Nile virus</span>
+                <p>
+                  The main carrier of current arbovirus risk in the wider
+                  region.
+                </p>
+              </article>
+              <article class="card vector reveal">
+                <span class="label">Invasive</span>
+                <h3 class="genus">
+                  <i>Aedes albopictus</i> / <i>Ae. aegypti</i>
+                </h3>
+                <span class="assoc">Dengue · chikungunya · Zika</span>
+                <p>
+                  Expanding through the Caucasus as the climate warms, and
+                  documented at points of entry.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="sub two">
+            <div class="reveal">
+              <span class="label">Working assumptions</span>
+              <h3>Which species we plan for</h3>
+              <p>
+                For the lowland we work with three species:
+                <i>Culex pipiens</i>, <i>Anopheles sacharovi</i> and
+                <i>Aedes caspius</i>. Invasive <i>Aedes</i> are monitored as a
+                possible newcomer.
+              </p>
+              <p>
+                These are assumptions for specialists to check, not findings.
+                Correcting them is part of the plan (see
+                <a href="#contact">the request to specialists</a>).
+              </p>
+            </div>
+            <div class="reveal">
+              <span class="label">How it is controlled now</span>
+              <h3>Repeated chemical spraying</h3>
+              <ul class="ticks dash">
+                <li>It is costly to repeat.</li>
+                <li>It drives insecticide resistance.</li>
+                <li>It harms non-target species.</li>
+                <li>
+                  There is no fine-grained picture of <em>where</em> and
+                  <em>when</em> conditions favour breeding, so spraying is broad
+                  rather than targeted.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <aside
+            class="sub callout callout--honey reveal"
+            aria-label="Climate context"
+          >
+            <span class="label">Climate</span>
+            <h3>A longer season and a wider range</h3>
+            <p style="margin: 0">
+              Warming lengthens the mosquito season and widens the area of
+              suitable habitat. Azerbaijan hosted COP29 in Baku in November
+              2024. WolbaCaspian is a small piece of climate-adaptation
+              infrastructure for public health: local, low-cost and measurable.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ==================== 02 PROJECT ==================== -->
+      <section id="project" class="alt" aria-labelledby="project-title">
+        <div class="wrap">
+          <header class="sec-head reveal">
+            <div class="sec-num">
+              <span class="n">02</span><span class="rule"></span
+              ><span class="label">Project</span>
+            </div>
+            <h2 id="project-title">
+              From a reading to a decision, in four steps.
+            </h2>
+            <p class="lede">
+              Each step is simple on its own. Together they turn temperature,
+              water and rain into a short list of places worth checking this
+              week.
+            </p>
+          </header>
+
+          <ol class="pipeline">
+            <li class="reveal">
+              <span class="step-n">STEP 01</span>
+              <h3>Measure</h3>
+              <p>
+                Every 15 minutes, each station records air and water
+                temperature, humidity, rainfall and standing water, with a
+                timestamp and location.
+              </p>
+            </li>
+            <li class="reveal">
+              <span class="step-n">STEP 02</span>
+              <h3>Store</h3>
+              <p>
+                Readings are written to microSD first, then uploaded over Wi-Fi
+                or GSM. The connection can drop; the data does not.
+              </p>
+            </li>
+            <li class="reveal">
+              <span class="step-n">STEP 03</span>
+              <h3>Estimate</h3>
+              <p>
+                Readings are compared with published development thresholds to
+                produce a transparent suitability index: low, medium or high.
+              </p>
+            </li>
+            <li class="reveal">
+              <span class="step-n">STEP 04</span>
+              <h3>Act</h3>
+              <p>
+                A map and trend view show which areas are becoming favourable,
+                so ditches, containers and tyres can be drained, covered or
+                removed.
+              </p>
+            </li>
+          </ol>
+
+          <div class="sub two">
+            <article class="card decision reveal">
+              <span class="label">Design decision A</span>
+              <h3>Fixed stations, not drones</h3>
+              <p style="margin: 0">
+                Drones give short, weather-dependent snapshots. A fixed station
+                gives a continuous, 24/7, all-weather time series, which is the
+                kind of record a model needs.
+              </p>
+            </article>
+            <article class="card decision reveal">
+              <span class="label">Design decision B</span>
+              <h3>Biology first, algorithms second</h3>
+              <p style="margin: 0">
+                Every sensor must connect to larval development in one sentence.
+                The model starts as transparent rules and moves to statistics
+                and machine learning only as far as labelled field data allows.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 03 STATION ==================== -->
+      <section id="station" aria-labelledby="station-title">
+        <div class="wrap">
+          <header class="sec-head reveal">
+            <div class="sec-num">
+              <span class="n">03</span><span class="rule"></span
+              ><span class="label">Station</span>
+            </div>
+            <h2 id="station-title">
+              One station: five measurements, one local log.
+            </h2>
+            <p class="lede">
+              Off-the-shelf parts, chosen so that each reading is stable enough
+              to trust and simple enough to repair in the field.
+            </p>
+          </header>
+
+          <figure class="reveal">
+            <div class="fig-scroll">
+              <svg
+                viewBox="0 0 760 370"
+                role="img"
+                aria-labelledby="bd-title bd-desc"
+              >
+                <title id="bd-title">Block diagram of a station</title>
+                <desc id="bd-desc">
+                  Four sensors (SHT31 for air temperature and humidity, a
+                  tipping-bucket rain gauge with reed switch, water-presence
+                  electrodes or a capacitive level sensor, and a DS18B20 water
+                  temperature probe) feed an ESP32 controller. The controller
+                  keeps time with a DS3231 real-time clock and writes CSV files
+                  to microSD, then uploads over Wi-Fi or GSM to a server that
+                  produces the map and trend view. Power comes from a 6 volt
+                  solar panel through a charge controller into an 18650 cell.
+                </desc>
+                <defs>
+                  <marker
+                    id="ah"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="7"
+                    markerHeight="7"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M0 0L10 5L0 10z" fill="#3B2314" />
+                  </marker>
+                  <marker
+                    id="ah2"
+                    viewBox="0 0 10 10"
+                    refX="9"
+                    refY="5"
+                    markerWidth="7"
+                    markerHeight="7"
+                    orient="auto-start-reverse"
+                  >
+                    <path d="M0 0L10 5L0 10z" fill="#C2571A" />
+                  </marker>
+                </defs>
+                <g font-family="ui-monospace,Menlo,Consolas,monospace">
+                  <text
+                    x="20"
+                    y="20"
+                    font-size="10.5"
+                    letter-spacing="1.4"
+                    fill="#6B4226"
+                  >
+                    SENSORS
+                  </text>
+                  <text
+                    x="290"
+                    y="20"
+                    font-size="10.5"
+                    letter-spacing="1.4"
+                    fill="#6B4226"
+                  >
+                    CONTROLLER
+                  </text>
+                  <text
+                    x="560"
+                    y="20"
+                    font-size="10.5"
+                    letter-spacing="1.4"
+                    fill="#6B4226"
+                  >
+                    DATA
+                  </text>
+                  <text
+                    x="20"
+                    y="302"
+                    font-size="10.5"
+                    letter-spacing="1.4"
+                    fill="#6B4226"
+                  >
+                    POWER
+                  </text>
+
+                  <!-- sensors -->
+                  <g stroke="#3B2314" stroke-width="1.5" fill="#FBF3E4">
+                    <rect x="20" y="30" width="190" height="50" rx="3" />
+                    <rect x="20" y="95" width="190" height="50" rx="3" />
+                    <rect x="20" y="160" width="190" height="50" rx="3" />
+                    <rect x="20" y="225" width="190" height="50" rx="3" />
+                  </g>
+                  <g font-size="12.5" fill="#3B2314" font-weight="700">
+                    <text x="32" y="52">SHT31</text>
+                    <text x="32" y="117">Tipping bucket</text>
+                    <text x="32" y="182">Electrodes / capacitive</text>
+                    <text x="32" y="247">DS18B20</text>
+                  </g>
+                  <g font-size="11" fill="#6B4226">
+                    <text x="32" y="69">air temperature · RH</text>
+                    <text x="32" y="134">rainfall · reed switch</text>
+                    <text x="32" y="199">standing water 0/1</text>
+                    <text x="32" y="264">water temperature</text>
+                  </g>
+                  <g
+                    stroke="#3B2314"
+                    stroke-width="1.6"
+                    fill="none"
+                    marker-end="url(#ah)"
+                  >
+                    <path d="M210 55H286" />
+                    <path d="M210 120H286" />
+                    <path d="M210 185H286" />
+                    <path d="M210 250H286" />
+                  </g>
+
+                  <!-- controller -->
+                  <rect
+                    x="290"
+                    y="40"
+                    width="190"
+                    height="232"
+                    rx="4"
+                    fill="#3B2314"
+                  />
+                  <text
+                    x="308"
+                    y="76"
+                    font-size="20"
+                    font-weight="700"
+                    fill="#FBF3E4"
+                  >
+                    ESP32
+                  </text>
+                  <text x="308" y="98" font-size="11" fill="#F1E2C6">
+                    wake · read ×5 · median
+                  </text>
+                  <text x="308" y="116" font-size="11" fill="#F1E2C6">
+                    deep sleep between cycles
+                  </text>
+                  <rect
+                    x="304"
+                    y="180"
+                    width="80"
+                    height="44"
+                    rx="3"
+                    fill="#F2B705"
+                  />
+                  <rect
+                    x="392"
+                    y="180"
+                    width="76"
+                    height="44"
+                    rx="3"
+                    fill="#F2B705"
+                  />
+                  <g font-size="11" fill="#3B2314">
+                    <text x="314" y="199" font-weight="700">DS3231</text>
+                    <text x="314" y="214">RTC</text>
+                    <text x="402" y="199" font-weight="700">microSD</text>
+                    <text x="402" y="214">CSV log</text>
+                  </g>
+                  <text x="308" y="252" font-size="10.5" fill="#F2B705">
+                    local log first, always
+                  </text>
+
+                  <!-- data -->
+                  <rect
+                    x="560"
+                    y="70"
+                    width="180"
+                    height="60"
+                    rx="3"
+                    fill="#FBF3E4"
+                    stroke="#3B2314"
+                    stroke-width="1.5"
+                  />
+                  <text
+                    x="574"
+                    y="96"
+                    font-size="12.5"
+                    font-weight="700"
+                    fill="#3B2314"
+                  >
+                    Wi-Fi / GSM
+                  </text>
+                  <text x="574" y="114" font-size="11" fill="#6B4226">
+                    ≤ 20 s · ≤ 3 tries
+                  </text>
+                  <rect
+                    x="560"
+                    y="180"
+                    width="180"
+                    height="60"
+                    rx="3"
+                    fill="#F1E2C6"
+                    stroke="#3B2314"
+                    stroke-width="1.5"
+                  />
+                  <text
+                    x="574"
+                    y="206"
+                    font-size="12.5"
+                    font-weight="700"
+                    fill="#3B2314"
+                  >
+                    Server
+                  </text>
+                  <text x="574" y="224" font-size="11" fill="#6B4226">
+                    index · map · trends
+                  </text>
+                  <path
+                    d="M480 100H556"
+                    stroke="#3B2314"
+                    stroke-width="1.6"
+                    marker-end="url(#ah)"
+                  />
+                  <path
+                    d="M650 130V176"
+                    stroke="#3B2314"
+                    stroke-width="1.6"
+                    stroke-dasharray="5 4"
+                    marker-end="url(#ah)"
+                  />
+
+                  <!-- power -->
+                  <g stroke="#C2571A" stroke-width="1.5" fill="#FBF3E4">
+                    <rect x="20" y="310" width="170" height="46" rx="3" />
+                    <rect x="226" y="310" width="170" height="46" rx="3" />
+                    <rect x="430" y="310" width="150" height="46" rx="3" />
+                  </g>
+                  <g font-size="11.5" fill="#3B2314">
+                    <text x="32" y="331" font-weight="700">Solar panel</text>
+                    <text x="32" y="347">6 V · 3–5 W</text>
+                    <text x="238" y="331" font-weight="700">
+                      Charge controller
+                    </text>
+                    <text x="238" y="347">regulates charging</text>
+                    <text x="442" y="331" font-weight="700">18650 cell</text>
+                    <text x="442" y="347">overnight supply</text>
+                  </g>
+                  <g
+                    stroke="#C2571A"
+                    stroke-width="1.8"
+                    fill="none"
+                    marker-end="url(#ah2)"
+                  >
+                    <path d="M190 333H222" />
+                    <path d="M396 333H426" />
+                    <path d="M455 310V276" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <figcaption>
+              Fig. 2 — Station block diagram. Arrows show data (dark) and power
+              (orange). On narrow screens, scroll sideways.
+            </figcaption>
+          </figure>
+
+          <div class="sub reveal">
+            <span class="label">Table 1</span>
+            <h3>What is measured, and why</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Variable</th>
+                    <th scope="col">Unit</th>
+                    <th scope="col">Why it matters for larvae</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Air temperature</th>
+                    <td class="num">°C</td>
+                    <td>
+                      Sets the speed of larval development; the basis for
+                      degree-days and cycle length.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Relative humidity</th>
+                    <td class="num">%</td>
+                    <td>
+                      Affects adult survival and how fast small water bodies dry
+                      out.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Rainfall</th>
+                    <td class="num">mm</td>
+                    <td>
+                      Fills breeding sites. Intensity matters: heavy rain can
+                      flush larvae out.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Standing water</th>
+                    <td class="num">0 / 1</td>
+                    <td>
+                      A direct indicator that a breeding site exists. The most
+                      informative single feature.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Water temperature</th>
+                    <td class="num">°C</td>
+                    <td>
+                      Larvae develop at water temperature, not air temperature.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Battery voltage</th>
+                    <td class="num">V</td>
+                    <td>
+                      A service variable. Separates a “measured zero” from “the
+                      station is dead”.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="sub reveal">
+            <span class="label">Table 2</span>
+            <h3>Hardware</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Node</th>
+                    <th scope="col">Component</th>
+                    <th scope="col">Reason</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Controller</th>
+                    <td class="num">ESP32</td>
+                    <td>
+                      Built-in Wi-Fi and a deep-sleep mode for low power use.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Temperature + humidity</th>
+                    <td>
+                      <span class="num">SHT31</span>
+                      <small>(alt. <span class="num">BME280</span>)</small>
+                    </td>
+                    <td>
+                      Better humidity accuracy and less drift than DHT-class
+                      sensors.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Rainfall</th>
+                    <td>Tipping-bucket gauge with reed switch</td>
+                    <td>
+                      Measures amount. Resistive rain plates only detect that
+                      something is wet.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Standing water</th>
+                    <td>
+                      Stainless electrodes with alternating polarity, or
+                      capacitive level sensor
+                    </td>
+                    <td>
+                      Prevents electrolysis, which corrodes electrodes and
+                      corrupts readings.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Water temperature</th>
+                    <td>Waterproof <span class="num">DS18B20</span></td>
+                    <td>Placed in the breeding site itself.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Clock</th>
+                    <td class="num">DS3231 RTC</td>
+                    <td>
+                      Keeps accurate timestamps even when the network is down.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Storage</th>
+                    <td>microSD, plain CSV</td>
+                    <td>
+                      The local log is mandatory; upload is a copy, not the
+                      original.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Power</th>
+                    <td>
+                      6 V 3–5 W solar panel, charge controller, 18650 cell
+                    </td>
+                    <td>Runs without mains power at field sites.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Housing</th>
+                    <td>IP65 box + ventilated radiation shield</td>
+                    <td>
+                      Stops a sun-heated box from corrupting temperature data.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <aside class="sub callout reveal" aria-labelledby="placement-title">
+            <span class="label">Placement rules</span>
+            <h3 id="placement-title">Where a station goes</h3>
+            <ul class="ticks">
+              <li>
+                Air sensor <span class="num">1.5–2 m</span> above the ground.
+              </li>
+              <li>Not over asphalt or concrete, and not next to walls.</li>
+              <li>
+                Within <span class="num">300–500 m</span> of the breeding sites
+                being monitored.
+              </li>
+              <li>
+                Shield oriented so that direct sun never reaches the sensor.
+              </li>
+            </ul>
+          </aside>
+
+          <div class="sub two">
+            <div class="reveal">
+              <span class="label">Data format</span>
+              <h3>Plain CSV, one file per station per month</h3>
+              <ul class="ticks dash">
+                <li>Timestamps are in UTC.</li>
+                <li>
+                  A missing value is an empty field,
+                  <strong>never zero</strong>. Zero is a measurement.
+                </li>
+                <li>
+                  Battery voltage, signal strength (<span class="num">rssi</span
+                  >) and firmware version travel with every row.
+                </li>
+              </ul>
+            </div>
+            <div class="reveal">
+              <span class="label">Firmware cycle</span>
+              <h3>Every 15 minutes</h3>
+              <ol class="chain" aria-label="Firmware cycle">
+                <li><span>wake</span></li>
+                <li><span>5 readings</span></li>
+                <li><span>median</span></li>
+                <li><span>write to SD</span></li>
+                <li><span>upload ≤20 s, ≤3 tries</span></li>
+                <li><span>deep sleep</span></li>
+              </ol>
+              <p
+                style="
+                  margin-top: 14px;
+                  font-size: 0.95rem;
+                  color: var(--chestnut);
+                "
+              >
+                The median of five readings removes single-sample spikes. The
+                upload is time-limited so a weak signal cannot drain the
+                battery.
+              </p>
+            </div>
+          </div>
+
+          <figure class="sub reveal">
+            <div class="code-head">
+              <span>LNK-01 · sample rows</span><span>csv</span>
+            </div>
+            <pre
+              class="code"
+              tabindex="0"
+              aria-label="Sample CSV data"
+            ><span class="h">station_id,timestamp_utc,t_air_c,rh_pct,rain_mm,water_present,t_water_c,battery_v,rssi,fw_ver</span>
 LNK-01,2026-05-14T06:00:00Z,18.4,82.1,0.0,1,16.9,4.02,-67,1.3.0
 LNK-01,2026-05-14T06:15:00Z,18.9,80.4,0.0,1,17.0,4.02,-66,1.3.0
 LNK-01,2026-05-14T06:30:00Z,19.6,78.8,0.2,1,17.1,4.01,-70,1.3.0</pre>
-      <figcaption>Format example showing the column layout.</figcaption>
-    </figure>
+            <figcaption>Format example showing the column layout.</figcaption>
+          </figure>
 
-    <div class="sub">
-      <div class="two">
-        <div class="reveal">
-          <span class="label">Calibration</span>
-          <h3>Checked before deployment, and again every season</h3>
-          <ul class="ticks">
-            <li><strong>72 hours</strong> of co-location with a reference instrument.</li>
-            <li>Fixed points: ice water for <span class="num">0 °C</span>; saturated salt solutions for humidity (<span class="num">MgCl₂ ≈ 33 %</span>, <span class="num">NaCl ≈ 75 %</span>).</li>
-            <li>A known-volume rain test for the gauge.</li>
-            <li>A 20-cycle wet/dry test for the water sensor.</li>
-          </ul>
-          <p style="font-size:.95rem;color:var(--chestnut)">Repeated every season and after any repair.</p>
-        </div>
-        <div class="reveal">
-          <span class="label">Table 3 · Acceptance</span>
-          <div class="table-wrap" style="margin-top:10px">
-            <table>
-              <thead><tr><th scope="col">Variable</th><th scope="col">Tolerance</th><th scope="col">If outside</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">Air temperature</th><td class="num">±0.5 °C</td><td>Firmware correction</td></tr>
-                <tr><th scope="row">Humidity</th><td class="num">±5 %</td><td>Replace sensor</td></tr>
-                <tr><th scope="row">Rainfall</th><td class="num">±10 %</td><td>Adjust mm-per-tip constant</td></tr>
-                <tr><th scope="row">Standing water</th><td class="num">0 false / 20</td><td>Check electrolysis or fouling</td></tr>
-              </tbody>
-            </table>
+          <div class="sub">
+            <div class="two">
+              <div class="reveal">
+                <span class="label">Calibration</span>
+                <h3>Checked before deployment, and again every season</h3>
+                <ul class="ticks">
+                  <li>
+                    <strong>72 hours</strong> of co-location with a reference
+                    instrument.
+                  </li>
+                  <li>
+                    Fixed points: ice water for <span class="num">0 °C</span>;
+                    saturated salt solutions for humidity (<span class="num"
+                      >MgCl₂ ≈ 33 %</span
+                    >, <span class="num">NaCl ≈ 75 %</span>).
+                  </li>
+                  <li>A known-volume rain test for the gauge.</li>
+                  <li>A 20-cycle wet/dry test for the water sensor.</li>
+                </ul>
+                <p style="font-size: 0.95rem; color: var(--chestnut)">
+                  Repeated every season and after any repair.
+                </p>
+              </div>
+              <div class="reveal">
+                <span class="label">Table 3 · Acceptance</span>
+                <div class="table-wrap" style="margin-top: 10px">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th scope="col">Variable</th>
+                        <th scope="col">Tolerance</th>
+                        <th scope="col">If outside</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Air temperature</th>
+                        <td class="num">±0.5 °C</td>
+                        <td>Firmware correction</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Humidity</th>
+                        <td class="num">±5 %</td>
+                        <td>Replace sensor</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Rainfall</th>
+                        <td class="num">±10 %</td>
+                        <td>Adjust mm-per-tip constant</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Standing water</th>
+                        <td class="num">0 false / 20</td>
+                        <td>Check electrolysis or fouling</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
-<!-- ==================== 04 METHODOLOGY ==================== -->
-<section id="method" class="alt" aria-labelledby="method-title">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-num"><span class="n">04</span><span class="rule"></span><span class="label">Methodology</span></div>
-      <h2 id="method-title">What the model claims, and what it does not.</h2>
-    </header>
+      <!-- ==================== 04 METHODOLOGY ==================== -->
+      <section id="method" class="alt" aria-labelledby="method-title">
+        <div class="wrap">
+          <header class="sec-head reveal">
+            <div class="sec-num">
+              <span class="n">04</span><span class="rule"></span
+              ><span class="label">Methodology</span>
+            </div>
+            <h2 id="method-title">
+              What the model claims, and what it does not.
+            </h2>
+          </header>
 
-    <blockquote class="pull reveal">
-      <p style="margin:0">The system estimates the suitability of conditions for larval development at a specific point, over a horizon of one to three weeks. It does not predict disease outbreaks.</p>
-    </blockquote>
+          <blockquote class="pull reveal">
+            <p style="margin: 0">
+              The system estimates the suitability of conditions for larval
+              development at a specific point, over a horizon of one to three
+              weeks. It does not predict disease outbreaks.
+            </p>
+          </blockquote>
 
-    <div class="reveal">
-      <span class="label">Model ladder</span>
-      <h3>Climb one rung at a time</h3>
-      <p class="prose">Each rung is used only when the one below it has been tested and the data can support the next.</p>
-      <ol class="ladder">
-        <li><span class="rung" aria-hidden="true">1</span><div><h4>Rule-based suitability index</h4><p>Built from published thresholds. Produces a value from 0 to 1, mapped to low, medium or high.</p></div></li>
-        <li><span class="rung" aria-hidden="true">2</span><div><h4>Degree-day model, per species</h4><p>Accumulated heat above a development threshold, used to estimate how far along a larval cohort is.</p></div></li>
-        <li><span class="rung" aria-hidden="true">3</span><div><h4>Logistic regression</h4><p>Fitted on labelled field data: the probability that larvae are present, given station features.</p></div></li>
-        <li><span class="rung" aria-hidden="true">4</span><div><h4>Machine learning</h4><p>Only when the data objectively support it, and always reported with its error on held-out data.</p></div></li>
-      </ol>
-      <p class="verdict">A model that loses to a simple temperature threshold has no right to be called a model.</p>
-    </div>
-
-    <div class="sub two">
-      <div class="reveal">
-        <span class="label">Features (from stations)</span>
-        <h3>What goes in</h3>
-        <ul class="ticks dash">
-          <li>Trailing 7- and 14-day means of water and air temperature</li>
-          <li>Accumulated degree-days</li>
-          <li>Rainfall sum</li>
-          <li>Number of days with standing water</li>
-          <li>Mean humidity</li>
-        </ul>
-      </div>
-      <div class="reveal">
-        <span class="label">Labels (from field surveys)</span>
-        <h3>What it is checked against</h3>
-        <ul class="ticks dash">
-          <li>Larvae present or absent</li>
-          <li>Larvae per dip</li>
-          <li>Pupae</li>
-        </ul>
-        <p style="font-size:.95rem;color:var(--chestnut)">Labels come from independent weekly field surveys (section <a href="#survey">06</a>), never from the stations themselves.</p>
-      </div>
-    </div>
-
-    <div class="sub reveal">
-      <span class="label">Validation</span>
-      <h3>How we test it honestly</h3>
-      <div class="three" style="margin-top:16px">
-        <div class="card"><span class="label">Split by time</span><p style="margin:0">Train on early weeks, test on later weeks. Never a random split, which would leak the future into the past.</p></div>
-        <div class="card"><span class="label">Always a baseline</span><p style="margin:0">Every model is compared against a simple temperature-threshold baseline.</p></div>
-        <div class="card"><span class="label">Dated predictions</span><p style="margin:0">Real forecasting is checked by issuing dated predictions in advance, then comparing them with later observation in a second season.</p></div>
-      </div>
-    </div>
-
-    <aside class="sub callout callout--honey reveal" aria-labelledby="limits-title">
-      <span class="label">Stated limits</span>
-      <h3 id="limits-title">What a small project can and cannot show</h3>
-      <ul class="ticks minus">
-        <li>Few sites and a short season limit what any model can show.</li>
-        <li>The system is designed to look one to three weeks ahead.</li>
-        <li>Proving that lead time needs longer data linked to official surveillance.</li>
-      </ul>
-    </aside>
-  </div>
-</section>
-
-<!-- ==================== 05 TRY THE MODEL ==================== -->
-<section id="model" aria-labelledby="model-title">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-num"><span class="n">05</span><span class="rule"></span><span class="label">Try the model</span></div>
-      <h2 id="model-title">Move the sliders. Watch the index.</h2>
-      <p class="lede">A simplified version of rung 1 of the ladder. Change the conditions at one point and see how each factor contributes.</p>
-    </header>
-
-    <div class="model reveal">
-      <form class="controls" id="model-form" onsubmit="return false" aria-label="Model inputs">
-        <fieldset>
-          <legend class="label">Standing water</legend>
-          <div class="seg">
-            <input type="radio" name="water" id="w-yes" value="1" checked>
-            <label for="w-yes">Present</label>
-            <input type="radio" name="water" id="w-no" value="0">
-            <label for="w-no">Absent</label>
+          <div class="reveal">
+            <span class="label">Model ladder</span>
+            <h3>Climb one rung at a time</h3>
+            <p class="prose">
+              Each rung is used only when the one below it has been tested and
+              the data can support the next.
+            </p>
+            <ol class="ladder">
+              <li>
+                <span class="rung" aria-hidden="true">1</span>
+                <div>
+                  <h4>Rule-based suitability index</h4>
+                  <p>
+                    Built from published thresholds. Produces a value from 0 to
+                    1, mapped to low, medium or high.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="rung" aria-hidden="true">2</span>
+                <div>
+                  <h4>Degree-day model, per species</h4>
+                  <p>
+                    Accumulated heat above a development threshold, used to
+                    estimate how far along a larval cohort is.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="rung" aria-hidden="true">3</span>
+                <div>
+                  <h4>Logistic regression</h4>
+                  <p>
+                    Fitted on labelled field data: the probability that larvae
+                    are present, given station features.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="rung" aria-hidden="true">4</span>
+                <div>
+                  <h4>Machine learning</h4>
+                  <p>
+                    Only when the data objectively support it, and always
+                    reported with its error on held-out data.
+                  </p>
+                </div>
+              </li>
+            </ol>
+            <p class="verdict">
+              A model that loses to a simple temperature threshold has no right
+              to be called a model.
+            </p>
           </div>
-        </fieldset>
 
-        <div class="ctrl">
-          <div class="ctrl-top"><label for="tw">Water temperature</label><output for="tw" id="tw-out">26 °C</output></div>
-          <input type="range" id="tw" min="0" max="45" step="0.5" value="26">
-          <div class="scale" aria-hidden="true"><span>0 °C</span><span>45 °C</span></div>
-        </div>
-        <div class="ctrl">
-          <div class="ctrl-top"><label for="ta">Air temperature</label><output for="ta" id="ta-out">27 °C</output></div>
-          <input type="range" id="ta" min="0" max="45" step="0.5" value="27">
-          <div class="scale" aria-hidden="true"><span>0 °C</span><span>45 °C</span></div>
-        </div>
-        <div class="ctrl">
-          <div class="ctrl-top"><label for="rh">Relative humidity</label><output for="rh" id="rh-out">70 %</output></div>
-          <input type="range" id="rh" min="10" max="100" step="1" value="70">
-          <div class="scale" aria-hidden="true"><span>10 %</span><span>100 %</span></div>
-        </div>
-        <div class="ctrl">
-          <div class="ctrl-top"><label for="rn">Rainfall, last 7 days</label><output for="rn" id="rn-out">20 mm</output></div>
-          <input type="range" id="rn" min="0" max="200" step="1" value="20">
-          <div class="scale" aria-hidden="true"><span>0 mm</span><span>200 mm</span></div>
-        </div>
-        <button type="button" class="reset" id="reset">Reset to defaults</button>
-      </form>
+          <div class="sub two">
+            <div class="reveal">
+              <span class="label">Features (from stations)</span>
+              <h3>What goes in</h3>
+              <ul class="ticks dash">
+                <li>
+                  Trailing 7- and 14-day means of water and air temperature
+                </li>
+                <li>Accumulated degree-days</li>
+                <li>Rainfall sum</li>
+                <li>Number of days with standing water</li>
+                <li>Mean humidity</li>
+              </ul>
+            </div>
+            <div class="reveal">
+              <span class="label">Labels (from field surveys)</span>
+              <h3>What it is checked against</h3>
+              <ul class="ticks dash">
+                <li>Larvae present or absent</li>
+                <li>Larvae per dip</li>
+                <li>Pupae</li>
+              </ul>
+              <p style="font-size: 0.95rem; color: var(--chestnut)">
+                Labels come from independent weekly field surveys (section
+                <a href="#survey">06</a>), never from the stations themselves.
+              </p>
+            </div>
+          </div>
 
-      <div class="result">
-        <span class="label">Suitability index</span>
-        <div class="idx-row">
-          <div class="idx" id="idx">0.96</div>
-          <div class="level" id="level" data-level="high">High</div>
-        </div>
-        <div class="meter">
-          <div class="meter-bar" id="meter" role="meter" aria-valuemin="0" aria-valuemax="1" aria-valuenow="0.96" aria-label="Suitability index"></div>
-          <div class="meter-ticks" aria-hidden="true"><i style="left:33%"></i><i style="left:66%"></i></div>
-          <div class="marker" id="marker" style="left:96%" aria-hidden="true"></div>
-          <div class="meter-labels" aria-hidden="true"><span>Low</span><span>Medium</span><span>High</span></div>
-        </div>
-        <p class="interp" id="interp" aria-live="polite"></p>
+          <div class="sub reveal">
+            <span class="label">Validation</span>
+            <h3>How we test it honestly</h3>
+            <div class="three" style="margin-top: 16px">
+              <div class="card">
+                <span class="label">Split by time</span>
+                <p style="margin: 0">
+                  Train on early weeks, test on later weeks. Never a random
+                  split, which would leak the future into the past.
+                </p>
+              </div>
+              <div class="card">
+                <span class="label">Always a baseline</span>
+                <p style="margin: 0">
+                  Every model is compared against a simple temperature-threshold
+                  baseline.
+                </p>
+              </div>
+              <div class="card">
+                <span class="label">Dated predictions</span>
+                <p style="margin: 0">
+                  Real forecasting is checked by issuing dated predictions in
+                  advance, then comparing them with later observation in a
+                  second season.
+                </p>
+              </div>
+            </div>
+          </div>
 
-        <span class="label">Factors (0–1)</span>
-        <ul class="factors" style="margin-top:8px">
-          <li><span class="fname">Water temperature<small>fTw · gate</small></span><span class="ftrack"><span class="ffill" id="b-tw"></span></span><span class="fval" id="v-tw">1.00</span></li>
-          <li><span class="fname">Air temperature<small>fTa · weight 0.20</small></span><span class="ftrack"><span class="ffill" id="b-ta"></span></span><span class="fval" id="v-ta">1.00</span></li>
-          <li><span class="fname">Humidity<small>fRh · weight 0.15</small></span><span class="ftrack"><span class="ffill" id="b-rh"></span></span><span class="fval" id="v-rh">0.75</span></li>
-          <li><span class="fname">Rainfall<small>fRn · weight 0.15</small></span><span class="ftrack"><span class="ffill" id="b-rn"></span></span><span class="fval" id="v-rn">1.00</span></li>
-        </ul>
-        <p class="water-line" id="water-line">standing water = 1 (present)</p>
+          <aside
+            class="sub callout callout--honey reveal"
+            aria-labelledby="limits-title"
+          >
+            <span class="label">Stated limits</span>
+            <h3 id="limits-title">What a small project can and cannot show</h3>
+            <ul class="ticks minus">
+              <li>
+                Few sites and a short season limit what any model can show.
+              </li>
+              <li>The system is designed to look one to three weeks ahead.</li>
+              <li>
+                Proving that lead time needs longer data linked to official
+                surveillance.
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
 
-        <details class="formula">
-          <summary>Show the formula</summary>
-<pre class="code">trapezoid(x,a,b,c,d): 0 outside (a,d), rises a→b,
+      <!-- ==================== 05 TRY THE MODEL ==================== -->
+      <section id="model" aria-labelledby="model-title">
+        <div class="wrap">
+          <header class="sec-head reveal">
+            <div class="sec-num">
+              <span class="n">05</span><span class="rule"></span
+              ><span class="label">Try the model</span>
+            </div>
+            <h2 id="model-title">Move the sliders. Watch the index.</h2>
+            <p class="lede">
+              A simplified version of rung 1 of the ladder. Change the
+              conditions at one point and see how each factor contributes.
+            </p>
+          </header>
+
+          <div class="model reveal">
+            <form
+              class="controls"
+              id="model-form"
+              onsubmit="return false;"
+              aria-label="Model inputs"
+            >
+              <fieldset>
+                <legend class="label">Standing water</legend>
+                <div class="seg">
+                  <input
+                    type="radio"
+                    name="water"
+                    id="w-yes"
+                    value="1"
+                    checked
+                  />
+                  <label for="w-yes">Present</label>
+                  <input type="radio" name="water" id="w-no" value="0" />
+                  <label for="w-no">Absent</label>
+                </div>
+              </fieldset>
+
+              <div class="ctrl">
+                <div class="ctrl-top">
+                  <label for="tw">Water temperature</label
+                  ><output for="tw" id="tw-out">26 °C</output>
+                </div>
+                <input
+                  type="range"
+                  id="tw"
+                  min="0"
+                  max="45"
+                  step="0.5"
+                  value="26"
+                />
+                <div class="scale" aria-hidden="true">
+                  <span>0 °C</span><span>45 °C</span>
+                </div>
+              </div>
+              <div class="ctrl">
+                <div class="ctrl-top">
+                  <label for="ta">Air temperature</label
+                  ><output for="ta" id="ta-out">27 °C</output>
+                </div>
+                <input
+                  type="range"
+                  id="ta"
+                  min="0"
+                  max="45"
+                  step="0.5"
+                  value="27"
+                />
+                <div class="scale" aria-hidden="true">
+                  <span>0 °C</span><span>45 °C</span>
+                </div>
+              </div>
+              <div class="ctrl">
+                <div class="ctrl-top">
+                  <label for="rh">Relative humidity</label
+                  ><output for="rh" id="rh-out">70 %</output>
+                </div>
+                <input
+                  type="range"
+                  id="rh"
+                  min="10"
+                  max="100"
+                  step="1"
+                  value="70"
+                />
+                <div class="scale" aria-hidden="true">
+                  <span>10 %</span><span>100 %</span>
+                </div>
+              </div>
+              <div class="ctrl">
+                <div class="ctrl-top">
+                  <label for="rn">Rainfall, last 7 days</label
+                  ><output for="rn" id="rn-out">20 mm</output>
+                </div>
+                <input
+                  type="range"
+                  id="rn"
+                  min="0"
+                  max="200"
+                  step="1"
+                  value="20"
+                />
+                <div class="scale" aria-hidden="true">
+                  <span>0 mm</span><span>200 mm</span>
+                </div>
+              </div>
+              <button type="button" class="reset" id="reset">
+                Reset to defaults
+              </button>
+            </form>
+
+            <div class="result">
+              <span class="label">Suitability index</span>
+              <div class="idx-row">
+                <div class="idx" id="idx">0.96</div>
+                <div class="level" id="level" data-level="high">High</div>
+              </div>
+              <div class="meter">
+                <div
+                  class="meter-bar"
+                  id="meter"
+                  role="meter"
+                  aria-valuemin="0"
+                  aria-valuemax="1"
+                  aria-valuenow="0.96"
+                  aria-label="Suitability index"
+                ></div>
+                <div class="meter-ticks" aria-hidden="true">
+                  <i style="left: 33%"></i><i style="left: 66%"></i>
+                </div>
+                <div
+                  class="marker"
+                  id="marker"
+                  style="left: 96%"
+                  aria-hidden="true"
+                ></div>
+                <div class="meter-labels" aria-hidden="true">
+                  <span>Low</span><span>Medium</span><span>High</span>
+                </div>
+              </div>
+              <p class="interp" id="interp" aria-live="polite"></p>
+
+              <span class="label">Factors (0–1)</span>
+              <ul class="factors" style="margin-top: 8px">
+                <li>
+                  <span class="fname"
+                    >Water temperature<small>fTw · gate</small></span
+                  ><span class="ftrack"
+                    ><span class="ffill" id="b-tw"></span></span
+                  ><span class="fval" id="v-tw">1.00</span>
+                </li>
+                <li>
+                  <span class="fname"
+                    >Air temperature<small>fTa · weight 0.20</small></span
+                  ><span class="ftrack"
+                    ><span class="ffill" id="b-ta"></span></span
+                  ><span class="fval" id="v-ta">1.00</span>
+                </li>
+                <li>
+                  <span class="fname"
+                    >Humidity<small>fRh · weight 0.15</small></span
+                  ><span class="ftrack"
+                    ><span class="ffill" id="b-rh"></span></span
+                  ><span class="fval" id="v-rh">0.75</span>
+                </li>
+                <li>
+                  <span class="fname"
+                    >Rainfall<small>fRn · weight 0.15</small></span
+                  ><span class="ftrack"
+                    ><span class="ffill" id="b-rn"></span></span
+                  ><span class="fval" id="v-rn">1.00</span>
+                </li>
+              </ul>
+              <p class="water-line" id="water-line">
+                standing water = 1 (present)
+              </p>
+
+              <details class="formula">
+                <summary>Show the formula</summary>
+                <pre class="code">
+trapezoid(x,a,b,c,d): 0 outside (a,d), rises a→b,
                       1 from b to c, falls c→d
 
 fTw = trapezoid(t_water, 10, 24, 31, 38)
@@ -716,447 +1690,830 @@ fRn = rain &lt; 15   ? rain / 15 × 0.8
     : clamp(1 − (rain − 100) / 250, 0.6, 1)
 
 index = water × fTw × (0.5 + 0.2·fTa + 0.15·fRh + 0.15·fRn)
-level = &lt;0.33 low · &lt;0.66 medium · else high</pre>
-        </details>
+level = &lt;0.33 low · &lt;0.66 medium · else high</pre
+                >
+              </details>
 
-        <p class="model-note">Educational model with illustrative thresholds; in the project these are replaced by published species-specific thresholds and tuned against field data. An index of conditions, not a forecast of outbreaks.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== 06 FIELD SURVEY ==================== -->
-<section id="survey" class="alt" aria-labelledby="survey-title">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-num"><span class="n">06</span><span class="rule"></span><span class="label">Field survey</span></div>
-      <h2 id="survey-title">Ground truth, one dip at a time.</h2>
-      <p class="lede">Stations provide the features. A model also needs something independent to predict: what is actually in the water. That comes from a weekly larval survey done by people, with a fixed protocol.</p>
-    </header>
-
-    <div class="two">
-      <div class="reveal">
-        <span class="label">Protocol</span>
-        <h3>Same points, same day, same method</h3>
-        <ol class="steps">
-          <li><strong>5–8 fixed points per station</strong>, within 500 m. Chosen once and kept for the whole season.</li>
-          <li><strong>Weekly</strong>, on the same weekday, in the morning, about <span class="num">08:00–11:00</span>.</li>
-          <li>A standard white dipper (<span class="num">~350 ml</span>). Approach slowly from the shaded side and scoop the surface at 45°.</li>
-          <li><strong>Exactly 10 dips</strong> per point.</li>
-          <li>Count early larvae (L1–L2), late larvae (L3–L4) and pupae separately.</li>
-          <li><strong>Always record zeros.</strong> An empty dip is data.</li>
-          <li>Larvae per dip <span class="formula-inline">= total ÷ 10</span></li>
-        </ol>
-      </div>
-      <div class="reveal">
-        <span class="label">Record for every point</span>
-        <h3>Survey sheet fields</h3>
-        <dl class="fields">
-          <dt>site_id</dt><dd>Fixed identifier of the point</dd>
-          <dt>habitat</dt><dd>Habitat type (see table below)</dd>
-          <dt>depth</dt><dd>Water depth</dd>
-          <dt>sun_shade</dt><dd>Sun or shade</dd>
-          <dt>notes</dt><dd>Insecticide treatment, cleaning, construction. A zero after treatment means a person intervened, not that conditions were unsuitable.</dd>
-          <dt>photo</dt><dd>One photo of the point</dd>
-        </dl>
-      </div>
-    </div>
-
-    <figure class="sub reveal">
-      <div class="fig-scroll">
-        <svg viewBox="0 0 640 200" role="img" aria-labelledby="lv-title lv-desc">
-          <title id="lv-title">Field cue: resting position of mosquito larvae</title>
-          <desc id="lv-desc">Left: an Anopheles larva lies flat, parallel to and just under the water surface. Right: a Culex or Aedes larva hangs down at an angle, with its breathing siphon touching the surface.</desc>
-          <rect x="0" y="52" width="640" height="118" fill="#F2B705" fill-opacity=".16"/>
-          <path d="M0 52q10-5 20 0t20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0" fill="none" stroke="#E8741E" stroke-width="2"/>
-          <text x="520" y="40" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="11" fill="#6B4226" letter-spacing=".8">WATER SURFACE</text>
-          <path d="M318 20V180" stroke="#6B4226" stroke-width="1" stroke-dasharray="4 4"/>
-
-          <!-- Anopheles: parallel -->
-          <g>
-            <circle cx="64" cy="62" r="7" fill="#3B2314"/>
-            <ellipse cx="84" cy="62" rx="12" ry="8" fill="#6B4226"/>
-            <path d="M96 62H210" stroke="#6B4226" stroke-width="9" stroke-linecap="round"/>
-            <path d="M110 57v10M124 57v10M138 57v10M152 57v10M166 57v10M180 57v10M194 57v10" stroke="#FBF3E4" stroke-width="1.2"/>
-            <path d="M214 62l10-6M214 62l10 6" stroke="#3B2314" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M56 58l-8-6M56 66l-8 6" stroke="#3B2314" stroke-width="1.5" stroke-linecap="round"/>
-          </g>
-
-          <!-- Culex/Aedes: angled with siphon -->
-          <g>
-            <path d="M520 54L500 78" stroke="#3B2314" stroke-width="4" stroke-linecap="round"/>
-            <path d="M500 78L444 140" stroke="#6B4226" stroke-width="9" stroke-linecap="round"/>
-            <path d="M486 86l7 7M474 99l7 7M462 112l7 7M452 124l7 7" stroke="#FBF3E4" stroke-width="1.2"/>
-            <ellipse cx="434" cy="150" rx="12" ry="9" fill="#6B4226" transform="rotate(-48 434 150)"/>
-            <circle cx="422" cy="164" r="7" fill="#3B2314"/>
-            <circle cx="520" cy="53" r="3" fill="#C2571A"/>
-          </g>
-
-          <g font-family="ui-monospace,Menlo,Consolas,monospace" font-size="11.5" fill="#3B2314" letter-spacing=".6">
-            <text x="20" y="112" font-style="italic" font-family="Georgia,serif" font-size="15">Anopheles</text>
-            <text x="20" y="132">lies parallel to the surface</text>
-            <text x="340" y="112" font-style="italic" font-family="Georgia,serif" font-size="15">Culex / Aedes</text>
-            <text x="340" y="132">hang at an angle,</text>
-            <text x="340" y="148">breathing through a siphon</text>
-          </g>
-        </svg>
-      </div>
-      <figcaption>Fig. 3 — A field cue, not an identification. Species are identified by specialists.</figcaption>
-    </figure>
-
-    <div class="sub reveal">
-      <span class="label">Table 4</span>
-      <h3>Habitat types</h3>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th scope="col">Habitat</th><th scope="col">Why it is on the list</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">Irrigation ditch</th><td>The dominant rural breeding type.</td></tr>
-            <tr><th scope="row">Rice field / flooded plot</th><td>Classic <i>Anopheles</i> habitat.</td></tr>
-            <tr><th scope="row">Barrel / container</th><td>Where invasive <i>Aedes</i> would first appear.</td></tr>
-            <tr><th scope="row">Old tyres / debris</th><td>Productive, and easy to remove.</td></tr>
-            <tr><th scope="row">Natural puddle</th><td>The direct link between rainfall and breeding.</td></tr>
-            <tr><th scope="row">Sewage / septic / drain</th><td>Typical <i>Culex pipiens</i> habitat.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="sub three">
-      <article class="card reveal">
-        <span class="label">Species identification</span>
-        <h3>Left to specialists</h3>
-        <p>From each point, 15–20 late larvae are preserved in 70 % ethanol, with the label written and placed <em>inside</em> the tube.</p>
-        <p style="margin:0">In the field we only note the resting position: <i>Anopheles</i> lie parallel to the surface; <i>Culex</i> and <i>Aedes</i> hang at an angle.</p>
-      </article>
-      <article class="card reveal">
-        <span class="label">Quality</span>
-        <h3>Checked, not assumed</h3>
-        <ul class="ticks" style="margin:0">
-          <li>10 % of points are re-surveyed by a second person.</li>
-          <li>Data are entered on the same day.</li>
-        </ul>
-      </article>
-      <article class="card reveal">
-        <span class="label">Ethics &amp; safety</span>
-        <h3>People first</h3>
-        <ul class="ticks" style="margin:0">
-          <li>Owner’s consent on private land.</li>
-          <li>Never deeper than knee height.</li>
-          <li>Never alone in unfamiliar terrain.</li>
-          <li>Residents are told about breeding near their homes, and the simple fix: drain, cover, remove.</li>
-          <li>Public datasets are aggregated to neighbourhood level.</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== 07 PROGRAMME PLAN ==================== -->
-<section id="plan" aria-labelledby="plan-title">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-num"><span class="n">07</span><span class="rule"></span><span class="label">Programme plan</span></div>
-      <h2 id="plan-title">Five phases, each ending in something checkable.</h2>
-      <p class="lede">This is a plan, not a progress report. Each phase ends with a deliverable that someone else can inspect.</p>
-    </header>
-
-    <ol class="timeline">
-      <li class="reveal">
-        <span class="node" aria-hidden="true">A</span>
-        <span class="label">Phase A</span>
-        <h3>Foundations</h3>
-        <ul class="ticks dash">
-          <li>Scope document in Azerbaijani, Russian and English.</li>
-          <li>Vector baseline: which species, where, and what is already published.</li>
-          <li>Operational definition of risk in terms of station variables.</li>
-        </ul>
-        <p class="deliv"><span class="label">Deliverable</span><span>A two-page scientific basis.</span></p>
-      </li>
-      <li class="reveal">
-        <span class="node" aria-hidden="true">B</span>
-        <span class="label">Phase B</span>
-        <h3>Station build &amp; calibration</h3>
-        <ul class="ticks dash">
-          <li>Assemble station v1.</li>
-          <li>Run it for 72 hours unattended.</li>
-          <li>Calibrate it against the acceptance table.</li>
-        </ul>
-        <p class="deliv"><span class="label">Deliverable</span><span>A calibrated station and its calibration log.</span></p>
-      </li>
-      <li class="reveal">
-        <span class="node" aria-hidden="true">C</span>
-        <span class="label">Phase C</span>
-        <h3>Pilot &amp; sites</h3>
-        <ul class="ticks dash">
-          <li>A 4–6 week pilot at a home or school.</li>
-          <li>3–5 candidate sites in the Lankaran area, each with written site permission.</li>
-          <li>3 or more stations running for 30 or more days.</li>
-          <li>A public uptime record.</li>
-        </ul>
-        <p class="deliv"><span class="label">Deliverable</span><span>A month of continuous data with known uptime.</span></p>
-      </li>
-      <li class="reveal">
-        <span class="node" aria-hidden="true">D</span>
-        <span class="label">Phase D</span>
-        <h3>Science</h3>
-        <ul class="ticks dash">
-          <li>Weekly larval surveys: at least 40 labelled observations as a minimum, about 290 per season as the working target.</li>
-          <li>Model v1 along the ladder, reported with held-out error and a stated baseline.</li>
-          <li>A reporting channel for residents (web form or Telegram bot).</li>
-          <li>Expert review of the method and the vector assumptions.</li>
-        </ul>
-        <p class="deliv"><span class="label">Deliverable</span><span>A labelled dataset, a documented model and an expert review.</span></p>
-      </li>
-      <li class="reveal">
-        <span class="node" aria-hidden="true">E</span>
-        <span class="label">Phase E</span>
-        <h3>Institutions &amp; outputs</h3>
-        <ul class="ticks dash">
-          <li>Review by the Institute of Zoology.</li>
-          <li>A working relationship with district hygiene and epidemiology services.</li>
-          <li>A republic-level methodological assessment.</li>
-          <li>A second season with forecasts issued in advance.</li>
-          <li>An open dataset, and a preprint or talk.</li>
-          <li>A handover plan.</li>
-        </ul>
-        <p class="deliv"><span class="label">Deliverable</span><span>A validated forecast table and a citable open dataset.</span></p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<!-- ==================== 08 VISION ==================== -->
-<section id="vision" class="dark" aria-labelledby="vision-title">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-num"><span class="n">08</span><span class="rule"></span><span class="label">Vision</span></div>
-      <h2 id="vision-title">Beyond the pilot</h2>
-      <p class="lede">Where this could lead if the pilot works. Each card is tagged: <strong>PROPOSED</strong> for our own ideas, <strong>LITERATURE</strong> for work done by others.</p>
-    </header>
-
-    <div class="vcards">
-      <article class="vcard reveal">
-        <span class="tag tag--proposed">PROPOSED</span>
-        <h3>Larval source management</h3>
-        <p>The main use of the data downstream. For <i>Culex</i>, <i>Anopheles</i> and <i>Aedes caspius</i>, the right intervention is at the breeding site: drain it, cover it or remove it.</p>
-        <p>The suitability map is meant to say which sites, and when, so that effort goes where conditions are favourable.</p>
-      </article>
-      <article class="vcard reveal">
-        <span class="tag tag--proposed">PROPOSED</span>
-        <h3>From single sites to a district network</h3>
-        <p>If the stations prove reliable and the index tracks field observations, the same design could be extended to a district network and then to other Caspian-coast regions.</p>
-        <p>Whether that happens depends on pilot results.</p>
-      </article>
-      <article class="vcard wide reveal">
-        <span class="tag tag--lit">LITERATURE</span>
-        <h3><i>Wolbachia</i>: an option for <i>Aedes</i> only</h3>
-        <p><i>Wolbachia</i>-based methods have been used against <i>Aedes aegypti</i> elsewhere. Here they would become relevant only if invasive <i>Aedes</i> became established. They do not address <i>Culex</i> or <i>Anopheles</i>. Any release would need state authorisation and a biosafety review, and is outside the scope of this project.</p>
-        <div class="stats">
-          <div class="stat">
-            <div class="v">~77 %</div>
-            <div class="d">reduction in <i>Aedes aegypti</i> population, reported by release programmes elsewhere</div>
-          </div>
-          <div class="stat">
-            <div class="v">~70–72 %</div>
-            <div class="d">reduction in dengue incidence, reported by release programmes elsewhere</div>
+              <p class="model-note">
+                Educational model with illustrative thresholds; in the project
+                these are replaced by published species-specific thresholds and
+                tuned against field data. An index of conditions, not a forecast
+                of outbreaks.
+              </p>
+            </div>
           </div>
         </div>
-        <p class="source"><strong>Source:</strong> Singapore National Environment Agency, “Project Wolbachia” cluster-randomised trial (~700,000 residents), and the World Mosquito Program. These are results of those release programmes, <strong>not results of WolbaCaspian</strong>.</p>
-      </article>
-    </div>
-  </div>
-</section>
+      </section>
 
-<!-- ==================== 09 ABOUT & CONTACT ==================== -->
-<section id="contact" aria-labelledby="contact-title">
-  <div class="wrap">
-    <header class="sec-head reveal">
-      <div class="sec-num"><span class="n">09</span><span class="rule"></span><span class="label">About &amp; contact</span></div>
-      <h2 id="contact-title">It started with a question about the coast.</h2>
-    </header>
+      <!-- ==================== 06 FIELD SURVEY ==================== -->
+      <section id="survey" class="alt" aria-labelledby="survey-title">
+        <div class="wrap">
+          <header class="sec-head reveal">
+            <div class="sec-num">
+              <span class="n">06</span><span class="rule"></span
+              ><span class="label">Field survey</span>
+            </div>
+            <h2 id="survey-title">Ground truth, one dip at a time.</h2>
+            <p class="lede">
+              Stations provide the features. A model also needs something
+              independent to predict: what is actually in the water. That comes
+              from a weekly larval survey done by people, with a fixed protocol.
+            </p>
+          </header>
 
-    <div class="two">
-      <div class="reveal">
-        <p>WolbaCaspian began with a simple question about the Caspian coast where its founder, Jeyla <span class="ph">[Surname]</span>, lives: how could a community see mosquito risk <em>before</em> it arrives?</p>
-        <p>Early versions imagined drones. We settled on fixed stations, because a model needs a continuous record more than an occasional aerial view.</p>
-        <p>The approach is deliberately conservative: measure carefully, calibrate honestly, label the data, and let a simple model earn its complexity.</p>
+          <div class="two">
+            <div class="reveal">
+              <span class="label">Protocol</span>
+              <h3>Same points, same day, same method</h3>
+              <ol class="steps">
+                <li>
+                  <strong>5–8 fixed points per station</strong>, within 500 m.
+                  Chosen once and kept for the whole season.
+                </li>
+                <li>
+                  <strong>Weekly</strong>, on the same weekday, in the morning,
+                  about <span class="num">08:00–11:00</span>.
+                </li>
+                <li>
+                  A standard white dipper (<span class="num">~350 ml</span>).
+                  Approach slowly from the shaded side and scoop the surface at
+                  45°.
+                </li>
+                <li><strong>Exactly 10 dips</strong> per point.</li>
+                <li>
+                  Count early larvae (L1–L2), late larvae (L3–L4) and pupae
+                  separately.
+                </li>
+                <li>
+                  <strong>Always record zeros.</strong> An empty dip is data.
+                </li>
+                <li>
+                  Larvae per dip
+                  <span class="formula-inline">= total ÷ 10</span>
+                </li>
+              </ol>
+            </div>
+            <div class="reveal">
+              <span class="label">Record for every point</span>
+              <h3>Survey sheet fields</h3>
+              <dl class="fields">
+                <dt>site_id</dt>
+                <dd>Fixed identifier of the point</dd>
+                <dt>habitat</dt>
+                <dd>Habitat type (see table below)</dd>
+                <dt>depth</dt>
+                <dd>Water depth</dd>
+                <dt>sun_shade</dt>
+                <dd>Sun or shade</dd>
+                <dt>notes</dt>
+                <dd>
+                  Insecticide treatment, cleaning, construction. A zero after
+                  treatment means a person intervened, not that conditions were
+                  unsuitable.
+                </dd>
+                <dt>photo</dt>
+                <dd>One photo of the point</dd>
+              </dl>
+            </div>
+          </div>
 
-        <ul class="contact-list">
-          <li><span class="label">Email</span><span class="ph">[email]</span></li>
-          <li><span class="label">Code &amp; data</span><span class="ph">[GitHub link]</span></li>
-          <li><span class="label">Languages</span><span>Write in Azerbaijani, Russian or English.</span></li>
-        </ul>
+          <figure class="sub reveal">
+            <div class="fig-scroll">
+              <svg
+                viewBox="0 0 640 200"
+                role="img"
+                aria-labelledby="lv-title lv-desc"
+              >
+                <title id="lv-title">
+                  Field cue: resting position of mosquito larvae
+                </title>
+                <desc id="lv-desc">
+                  Left: an Anopheles larva lies flat, parallel to and just under
+                  the water surface. Right: a Culex or Aedes larva hangs down at
+                  an angle, with its breathing siphon touching the surface.
+                </desc>
+                <rect
+                  x="0"
+                  y="52"
+                  width="640"
+                  height="118"
+                  fill="#F2B705"
+                  fill-opacity=".16"
+                />
+                <path
+                  d="M0 52q10-5 20 0t20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0 20 0"
+                  fill="none"
+                  stroke="#E8741E"
+                  stroke-width="2"
+                />
+                <text
+                  x="520"
+                  y="40"
+                  font-family="ui-monospace,Menlo,Consolas,monospace"
+                  font-size="11"
+                  fill="#6B4226"
+                  letter-spacing=".8"
+                >
+                  WATER SURFACE
+                </text>
+                <path
+                  d="M318 20V180"
+                  stroke="#6B4226"
+                  stroke-width="1"
+                  stroke-dasharray="4 4"
+                />
+
+                <!-- Anopheles: parallel -->
+                <g>
+                  <circle cx="64" cy="62" r="7" fill="#3B2314" />
+                  <ellipse cx="84" cy="62" rx="12" ry="8" fill="#6B4226" />
+                  <path
+                    d="M96 62H210"
+                    stroke="#6B4226"
+                    stroke-width="9"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M110 57v10M124 57v10M138 57v10M152 57v10M166 57v10M180 57v10M194 57v10"
+                    stroke="#FBF3E4"
+                    stroke-width="1.2"
+                  />
+                  <path
+                    d="M214 62l10-6M214 62l10 6"
+                    stroke="#3B2314"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M56 58l-8-6M56 66l-8 6"
+                    stroke="#3B2314"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </g>
+
+                <!-- Culex/Aedes: angled with siphon -->
+                <g>
+                  <path
+                    d="M520 54L500 78"
+                    stroke="#3B2314"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M500 78L444 140"
+                    stroke="#6B4226"
+                    stroke-width="9"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M486 86l7 7M474 99l7 7M462 112l7 7M452 124l7 7"
+                    stroke="#FBF3E4"
+                    stroke-width="1.2"
+                  />
+                  <ellipse
+                    cx="434"
+                    cy="150"
+                    rx="12"
+                    ry="9"
+                    fill="#6B4226"
+                    transform="rotate(-48 434 150)"
+                  />
+                  <circle cx="422" cy="164" r="7" fill="#3B2314" />
+                  <circle cx="520" cy="53" r="3" fill="#C2571A" />
+                </g>
+
+                <g
+                  font-family="ui-monospace,Menlo,Consolas,monospace"
+                  font-size="11.5"
+                  fill="#3B2314"
+                  letter-spacing=".6"
+                >
+                  <text
+                    x="20"
+                    y="112"
+                    font-style="italic"
+                    font-family="Georgia,serif"
+                    font-size="15"
+                  >
+                    Anopheles
+                  </text>
+                  <text x="20" y="132">lies parallel to the surface</text>
+                  <text
+                    x="340"
+                    y="112"
+                    font-style="italic"
+                    font-family="Georgia,serif"
+                    font-size="15"
+                  >
+                    Culex / Aedes
+                  </text>
+                  <text x="340" y="132">hang at an angle,</text>
+                  <text x="340" y="148">breathing through a siphon</text>
+                </g>
+              </svg>
+            </div>
+            <figcaption>
+              Fig. 3 — A field cue, not an identification. Species are
+              identified by specialists.
+            </figcaption>
+          </figure>
+
+          <div class="sub reveal">
+            <span class="label">Table 4</span>
+            <h3>Habitat types</h3>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Habitat</th>
+                    <th scope="col">Why it is on the list</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Irrigation ditch</th>
+                    <td>The dominant rural breeding type.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Rice field / flooded plot</th>
+                    <td>Classic <i>Anopheles</i> habitat.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Barrel / container</th>
+                    <td>Where invasive <i>Aedes</i> would first appear.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Old tyres / debris</th>
+                    <td>Productive, and easy to remove.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Natural puddle</th>
+                    <td>The direct link between rainfall and breeding.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Sewage / septic / drain</th>
+                    <td>Typical <i>Culex pipiens</i> habitat.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="sub three">
+            <article class="card reveal">
+              <span class="label">Species identification</span>
+              <h3>Left to specialists</h3>
+              <p>
+                From each point, 15–20 late larvae are preserved in 70 %
+                ethanol, with the label written and placed <em>inside</em> the
+                tube.
+              </p>
+              <p style="margin: 0">
+                In the field we only note the resting position:
+                <i>Anopheles</i> lie parallel to the surface; <i>Culex</i> and
+                <i>Aedes</i> hang at an angle.
+              </p>
+            </article>
+            <article class="card reveal">
+              <span class="label">Quality</span>
+              <h3>Checked, not assumed</h3>
+              <ul class="ticks" style="margin: 0">
+                <li>10 % of points are re-surveyed by a second person.</li>
+                <li>Data are entered on the same day.</li>
+              </ul>
+            </article>
+            <article class="card reveal">
+              <span class="label">Ethics &amp; safety</span>
+              <h3>People first</h3>
+              <ul class="ticks" style="margin: 0">
+                <li>Owner’s consent on private land.</li>
+                <li>Never deeper than knee height.</li>
+                <li>Never alone in unfamiliar terrain.</li>
+                <li>
+                  Residents are told about breeding near their homes, and the
+                  simple fix: drain, cover, remove.
+                </li>
+                <li>Public datasets are aggregated to neighbourhood level.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 07 PROGRAMME PLAN ==================== -->
+      <section id="plan" aria-labelledby="plan-title">
+        <div class="wrap">
+          <header class="sec-head reveal">
+            <div class="sec-num">
+              <span class="n">07</span><span class="rule"></span
+              ><span class="label">Programme plan</span>
+            </div>
+            <h2 id="plan-title">
+              Five phases, each ending in something checkable.
+            </h2>
+            <p class="lede">
+              This is a plan, not a progress report. Each phase ends with a
+              deliverable that someone else can inspect.
+            </p>
+          </header>
+
+          <ol class="timeline">
+            <li class="reveal">
+              <span class="node" aria-hidden="true">A</span>
+              <span class="label">Phase A</span>
+              <h3>Foundations</h3>
+              <ul class="ticks dash">
+                <li>Scope document in Azerbaijani, Russian and English.</li>
+                <li>
+                  Vector baseline: which species, where, and what is already
+                  published.
+                </li>
+                <li>
+                  Operational definition of risk in terms of station variables.
+                </li>
+              </ul>
+              <p class="deliv">
+                <span class="label">Deliverable</span
+                ><span>A two-page scientific basis.</span>
+              </p>
+            </li>
+            <li class="reveal">
+              <span class="node" aria-hidden="true">B</span>
+              <span class="label">Phase B</span>
+              <h3>Station build &amp; calibration</h3>
+              <ul class="ticks dash">
+                <li>Assemble station v1.</li>
+                <li>Run it for 72 hours unattended.</li>
+                <li>Calibrate it against the acceptance table.</li>
+              </ul>
+              <p class="deliv">
+                <span class="label">Deliverable</span
+                ><span>A calibrated station and its calibration log.</span>
+              </p>
+            </li>
+            <li class="reveal">
+              <span class="node" aria-hidden="true">C</span>
+              <span class="label">Phase C</span>
+              <h3>Pilot &amp; sites</h3>
+              <ul class="ticks dash">
+                <li>A 4–6 week pilot at a home or school.</li>
+                <li>
+                  3–5 candidate sites in the Lankaran area, each with written
+                  site permission.
+                </li>
+                <li>3 or more stations running for 30 or more days.</li>
+                <li>A public uptime record.</li>
+              </ul>
+              <p class="deliv">
+                <span class="label">Deliverable</span
+                ><span>A month of continuous data with known uptime.</span>
+              </p>
+            </li>
+            <li class="reveal">
+              <span class="node" aria-hidden="true">D</span>
+              <span class="label">Phase D</span>
+              <h3>Science</h3>
+              <ul class="ticks dash">
+                <li>
+                  Weekly larval surveys: at least 40 labelled observations as a
+                  minimum, about 290 per season as the working target.
+                </li>
+                <li>
+                  Model v1 along the ladder, reported with held-out error and a
+                  stated baseline.
+                </li>
+                <li>
+                  A reporting channel for residents (web form or Telegram bot).
+                </li>
+                <li>Expert review of the method and the vector assumptions.</li>
+              </ul>
+              <p class="deliv">
+                <span class="label">Deliverable</span
+                ><span
+                  >A labelled dataset, a documented model and an expert
+                  review.</span
+                >
+              </p>
+            </li>
+            <li class="reveal">
+              <span class="node" aria-hidden="true">E</span>
+              <span class="label">Phase E</span>
+              <h3>Institutions &amp; outputs</h3>
+              <ul class="ticks dash">
+                <li>Review by the Institute of Zoology.</li>
+                <li>
+                  A working relationship with district hygiene and epidemiology
+                  services.
+                </li>
+                <li>A republic-level methodological assessment.</li>
+                <li>A second season with forecasts issued in advance.</li>
+                <li>An open dataset, and a preprint or talk.</li>
+                <li>A handover plan.</li>
+              </ul>
+              <p class="deliv">
+                <span class="label">Deliverable</span
+                ><span
+                  >A validated forecast table and a citable open dataset.</span
+                >
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ==================== 08 VISION ==================== -->
+      <section id="vision" class="dark" aria-labelledby="vision-title">
+        <div class="wrap">
+          <header class="sec-head reveal">
+            <div class="sec-num">
+              <span class="n">08</span><span class="rule"></span
+              ><span class="label">Vision</span>
+            </div>
+            <h2 id="vision-title">Beyond the pilot</h2>
+            <p class="lede">
+              Where this could lead if the pilot works. Each card is tagged:
+              <strong>PROPOSED</strong> for our own ideas,
+              <strong>LITERATURE</strong> for work done by others.
+            </p>
+          </header>
+
+          <div class="vcards">
+            <article class="vcard reveal">
+              <span class="tag tag--proposed">PROPOSED</span>
+              <h3>Larval source management</h3>
+              <p>
+                The main use of the data downstream. For <i>Culex</i>,
+                <i>Anopheles</i> and <i>Aedes caspius</i>, the right
+                intervention is at the breeding site: drain it, cover it or
+                remove it.
+              </p>
+              <p>
+                The suitability map is meant to say which sites, and when, so
+                that effort goes where conditions are favourable.
+              </p>
+            </article>
+            <article class="vcard reveal">
+              <span class="tag tag--proposed">PROPOSED</span>
+              <h3>From single sites to a district network</h3>
+              <p>
+                If the stations prove reliable and the index tracks field
+                observations, the same design could be extended to a district
+                network and then to other Caspian-coast regions.
+              </p>
+              <p>Whether that happens depends on pilot results.</p>
+            </article>
+            <article class="vcard wide reveal">
+              <span class="tag tag--lit">LITERATURE</span>
+              <h3><i>Wolbachia</i>: an option for <i>Aedes</i> only</h3>
+              <p>
+                <i>Wolbachia</i>-based methods have been used against
+                <i>Aedes aegypti</i> elsewhere. Here they would become relevant
+                only if invasive <i>Aedes</i> became established. They do not
+                address <i>Culex</i> or <i>Anopheles</i>. Any release would need
+                state authorisation and a biosafety review, and is outside the
+                scope of this project.
+              </p>
+              <div class="stats">
+                <div class="stat">
+                  <div class="v">~77 %</div>
+                  <div class="d">
+                    reduction in <i>Aedes aegypti</i> population, reported by
+                    release programmes elsewhere
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="v">~70–72 %</div>
+                  <div class="d">
+                    reduction in dengue incidence, reported by release
+                    programmes elsewhere
+                  </div>
+                </div>
+              </div>
+              <p class="source">
+                <strong>Source:</strong> Singapore National Environment Agency,
+                “Project Wolbachia” cluster-randomised trial (~700,000
+                residents), and the World Mosquito Program. These are results of
+                those release programmes,
+                <strong>not results of WolbaCaspian</strong>.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== 09 ABOUT & CONTACT ==================== -->
+      <section id="contact" aria-labelledby="contact-title">
+        <div class="wrap">
+          <header class="sec-head reveal">
+            <div class="sec-num">
+              <span class="n">09</span><span class="rule"></span
+              ><span class="label">About &amp; contact</span>
+            </div>
+            <h2 id="contact-title">
+              It started with a question about the coast.
+            </h2>
+          </header>
+
+          <div class="two">
+            <div class="reveal">
+              <p>
+                WolbaCaspian began with a simple question about the Caspian
+                coast where its founder, Jeyla Ahmadzada, lives: how could a
+                community see mosquito risk <em>before</em> it arrives?
+              </p>
+              <p>
+                Early versions imagined drones. We settled on fixed stations,
+                because a model needs a continuous record more than an
+                occasional aerial view.
+              </p>
+              <p>
+                The approach is deliberately conservative: measure carefully,
+                calibrate honestly, label the data, and let a simple model earn
+                its complexity.
+              </p>
+
+              <ul class="contact-list">
+                <li>
+                  <span class="label">Email</span
+                  ><span class="ph">[email]</span>
+                </li>
+                <li>
+                  <span class="label">Code &amp; data</span
+                  ><span class="ph">[GitHub link]</span>
+                </li>
+                <li>
+                  <span class="label">Languages</span
+                  ><span>Write in Azerbaijani, Russian or English.</span>
+                </li>
+              </ul>
+            </div>
+
+            <aside class="ask reveal" aria-labelledby="ask-title">
+              <span class="label">For specialists</span>
+              <h3 id="ask-title">A 30-minute request</h3>
+              <p>
+                We are asking medical entomologists, vector biologists and
+                public-health surveillance specialists to read a two-page
+                methods note and tell us where our assumptions are wrong:
+                species composition, thresholds, survey design.
+              </p>
+              <p>
+                No signature or formal role is requested at this stage. Any
+                answer, including a refusal, is welcome.
+              </p>
+              <a
+                class="btn btn--primary"
+                href="mailto:[email]?subject=WolbaCaspian%20method%20review"
+              >
+                <svg
+                  width="18"
+                  height="14"
+                  viewBox="0 0 18 14"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="16"
+                    height="12"
+                    rx="1.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <path
+                    d="M1.5 2l7.5 6 7.5-6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                </svg>
+                Write to us
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="wrap">
+        <div>
+          <p class="motto">Science. Technology. Nature. For People.</p>
+          <small
+            >WolbaCaspian · Jeyla Ahmadzada, Ilyas Taghiyev, Youssef El Haroun,
+            Mikayil Ahmadbayli, Vahid Musayev</small
+          >
+        </div>
+        <div style="text-align: left">
+          <p class="label" style="margin: 0 0 4px">Updated October 2026</p>
+          <small><a href="#top">Back to top</a></small>
+        </div>
       </div>
+    </footer>
 
-      <aside class="ask reveal" aria-labelledby="ask-title">
-        <span class="label">For specialists</span>
-        <h3 id="ask-title">A 30-minute request</h3>
-        <p>We are asking medical entomologists, vector biologists and public-health surveillance specialists to read a two-page methods note and tell us where our assumptions are wrong: species composition, thresholds, survey design.</p>
-        <p>No signature or formal role is requested at this stage. Any answer, including a refusal, is welcome.</p>
-        <a class="btn btn--primary" href="mailto:[email]?subject=WolbaCaspian%20method%20review">
-          <svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true" focusable="false"><rect x="1" y="1" width="16" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M1.5 2l7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
-          Write to us
-        </a>
-      </aside>
-    </div>
-  </div>
-</section>
+    <script>
+      (function () {
+        "use strict";
 
-</main>
+        /* ---------- mobile nav ---------- */
+        var toggle = document.querySelector(".nav-toggle");
+        var nav = document.getElementById("site-nav");
+        function closeNav() {
+          nav.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+        }
+        toggle.addEventListener("click", function () {
+          var open = nav.classList.toggle("open");
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+        nav.addEventListener("click", function (e) {
+          if (e.target.closest("a")) closeNav();
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") closeNav();
+        });
 
-<!-- ==================== FOOTER ==================== -->
-<footer class="site-footer">
-  <div class="wrap">
-    <div>
-      <p class="motto">Science. Technology. Nature. For People.</p>
-      <small>WolbaCaspian · Jeyla <span class="ph">[Surname]</span> · <span class="ph">[School]</span>, <span class="ph">[City]</span></small>
-    </div>
-    <div style="text-align:left">
-      <p class="label" style="margin:0 0 4px">Updated October 2026</p>
-      <small><a href="#top">Back to top</a></small>
-    </div>
-  </div>
-</footer>
+        var hasIO = "IntersectionObserver" in window;
 
-<script>
-(function(){
-  'use strict';
+        /* ---------- active nav link ---------- */
+        var links = Array.prototype.slice.call(nav.querySelectorAll("a"));
+        var byId = {};
+        links.forEach(function (a) {
+          byId[a.getAttribute("href").slice(1)] = a;
+        });
+        if (hasIO) {
+          var spy = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (en) {
+                if (!en.isIntersecting) return;
+                links.forEach(function (a) {
+                  a.removeAttribute("aria-current");
+                });
+                var a = byId[en.target.id];
+                if (a) a.setAttribute("aria-current", "true");
+              });
+            },
+            { rootMargin: "-45% 0px -50% 0px" },
+          );
+          Object.keys(byId).forEach(function (id) {
+            var s = document.getElementById(id);
+            if (s) spy.observe(s);
+          });
+        }
 
-  /* ---------- mobile nav ---------- */
-  var toggle = document.querySelector('.nav-toggle');
-  var nav = document.getElementById('site-nav');
-  function closeNav(){ nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); }
-  toggle.addEventListener('click', function(){
-    var open = nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  nav.addEventListener('click', function(e){ if (e.target.closest('a')) closeNav(); });
-  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeNav(); });
+        /* ---------- scroll reveal ---------- */
+        var reveals = document.querySelectorAll(".reveal");
+        var reduce =
+          window.matchMedia &&
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (!hasIO || reduce) {
+          reveals.forEach(function (el) {
+            el.classList.add("is-in");
+          });
+        } else {
+          var ro = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (en) {
+                if (en.isIntersecting) {
+                  en.target.classList.add("is-in");
+                  ro.unobserve(en.target);
+                }
+              });
+            },
+            { rootMargin: "0px 0px -8% 0px", threshold: 0.05 },
+          );
+          reveals.forEach(function (el) {
+            ro.observe(el);
+          });
+        }
 
-  var hasIO = 'IntersectionObserver' in window;
+        /* ---------- suitability model ---------- */
+        function clamp(x, a, b) {
+          return Math.min(b, Math.max(a, x));
+        }
+        function trapezoid(x, a, b, c, d) {
+          if (x <= a || x >= d) return 0;
+          if (x < b) return (x - a) / (b - a);
+          if (x <= c) return 1;
+          return (d - x) / (d - c);
+        }
+        function compute(s) {
+          var fTw = trapezoid(s.tw, 10, 24, 31, 38);
+          var fTa = trapezoid(s.ta, 10, 22, 32, 40);
+          var fRh = clamp((s.rh - 40) / 40, 0, 1);
+          var r = s.rain;
+          var fRn =
+            r < 15
+              ? (r / 15) * 0.8
+              : r <= 100
+                ? 1
+                : clamp(1 - (r - 100) / 250, 0.6, 1);
+          var index = clamp(
+            s.water * fTw * (0.5 + 0.2 * fTa + 0.15 * fRh + 0.15 * fRn),
+            0,
+            1,
+          );
+          return { fTw: fTw, fTa: fTa, fRh: fRh, fRn: fRn, index: index };
+        }
 
-  /* ---------- active nav link ---------- */
-  var links = Array.prototype.slice.call(nav.querySelectorAll('a'));
-  var byId = {};
-  links.forEach(function(a){ byId[a.getAttribute('href').slice(1)] = a; });
-  if (hasIO) {
-    var spy = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if (!en.isIntersecting) return;
-        links.forEach(function(a){ a.removeAttribute('aria-current'); });
-        var a = byId[en.target.id];
-        if (a) a.setAttribute('aria-current','true');
-      });
-    }, { rootMargin: '-45% 0px -50% 0px' });
-    Object.keys(byId).forEach(function(id){
-      var s = document.getElementById(id);
-      if (s) spy.observe(s);
-    });
-  }
+        var DEFAULTS = { water: 1, tw: 26, ta: 27, rh: 70, rain: 20 };
+        var el = function (id) {
+          return document.getElementById(id);
+        };
+        var inp = { tw: el("tw"), ta: el("ta"), rh: el("rh"), rn: el("rn") };
+        var wYes = el("w-yes"),
+          wNo = el("w-no");
 
-  /* ---------- scroll reveal ---------- */
-  var reveals = document.querySelectorAll('.reveal');
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!hasIO || reduce) {
-    reveals.forEach(function(el){ el.classList.add('is-in'); });
-  } else {
-    var ro = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if (en.isIntersecting) { en.target.classList.add('is-in'); ro.unobserve(en.target); }
-      });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
-    reveals.forEach(function(el){ ro.observe(el); });
-  }
+        function fmtT(v) {
+          return (Math.round(v * 10) / 10).toString() + " °C";
+        }
 
-  /* ---------- suitability model ---------- */
-  function clamp(x, a, b){ return Math.min(b, Math.max(a, x)); }
-  function trapezoid(x, a, b, c, d){
-    if (x <= a || x >= d) return 0;
-    if (x < b) return (x - a) / (b - a);
-    if (x <= c) return 1;
-    return (d - x) / (d - c);
-  }
-  function compute(s){
-    var fTw = trapezoid(s.tw, 10, 24, 31, 38);
-    var fTa = trapezoid(s.ta, 10, 22, 32, 40);
-    var fRh = clamp((s.rh - 40) / 40, 0, 1);
-    var r = s.rain;
-    var fRn = r < 15 ? (r / 15) * 0.8 : (r <= 100 ? 1 : clamp(1 - (r - 100) / 250, 0.6, 1));
-    var index = clamp(s.water * fTw * (0.5 + 0.2 * fTa + 0.15 * fRh + 0.15 * fRn), 0, 1);
-    return { fTw: fTw, fTa: fTa, fRh: fRh, fRn: fRn, index: index };
-  }
+        function update() {
+          var s = {
+            water: wYes.checked ? 1 : 0,
+            tw: parseFloat(inp.tw.value),
+            ta: parseFloat(inp.ta.value),
+            rh: parseFloat(inp.rh.value),
+            rain: parseFloat(inp.rn.value),
+          };
+          var r = compute(s);
 
-  var DEFAULTS = { water: 1, tw: 26, ta: 27, rh: 70, rain: 20 };
-  var el = function(id){ return document.getElementById(id); };
-  var inp = { tw: el('tw'), ta: el('ta'), rh: el('rh'), rn: el('rn') };
-  var wYes = el('w-yes'), wNo = el('w-no');
+          el("tw-out").textContent = fmtT(s.tw);
+          el("ta-out").textContent = fmtT(s.ta);
+          el("rh-out").textContent = s.rh + " %";
+          el("rn-out").textContent = s.rain + " mm";
+          inp.tw.setAttribute("aria-valuetext", fmtT(s.tw));
+          inp.ta.setAttribute("aria-valuetext", fmtT(s.ta));
+          inp.rh.setAttribute("aria-valuetext", s.rh + " percent");
+          inp.rn.setAttribute("aria-valuetext", s.rain + " millimetres");
 
-  function fmtT(v){ return (Math.round(v * 10) / 10).toString() + ' °C'; }
+          var idx = r.index;
+          var lvl = idx < 0.33 ? "low" : idx < 0.66 ? "medium" : "high";
+          var lvlText = { low: "Low", medium: "Medium", high: "High" }[lvl];
 
-  function update(){
-    var s = {
-      water: wYes.checked ? 1 : 0,
-      tw: parseFloat(inp.tw.value),
-      ta: parseFloat(inp.ta.value),
-      rh: parseFloat(inp.rh.value),
-      rain: parseFloat(inp.rn.value)
-    };
-    var r = compute(s);
+          el("idx").textContent = idx.toFixed(2);
+          var lv = el("level");
+          lv.textContent = lvlText;
+          lv.setAttribute("data-level", lvl);
+          el("marker").style.left = (idx * 100).toFixed(1) + "%";
+          var m = el("meter");
+          m.setAttribute("aria-valuenow", idx.toFixed(2));
+          m.setAttribute("aria-valuetext", idx.toFixed(2) + ", " + lvlText);
 
-    el('tw-out').textContent = fmtT(s.tw);
-    el('ta-out').textContent = fmtT(s.ta);
-    el('rh-out').textContent = s.rh + ' %';
-    el('rn-out').textContent = s.rain + ' mm';
-    inp.tw.setAttribute('aria-valuetext', fmtT(s.tw));
-    inp.ta.setAttribute('aria-valuetext', fmtT(s.ta));
-    inp.rh.setAttribute('aria-valuetext', s.rh + ' percent');
-    inp.rn.setAttribute('aria-valuetext', s.rain + ' millimetres');
+          [
+            ["tw", r.fTw],
+            ["ta", r.fTa],
+            ["rh", r.fRh],
+            ["rn", r.fRn],
+          ].forEach(function (p) {
+            el("b-" + p[0]).style.width = (p[1] * 100).toFixed(1) + "%";
+            el("v-" + p[0]).textContent = p[1].toFixed(2);
+          });
+          el("water-line").textContent =
+            "standing water = " +
+            s.water +
+            (s.water ? " (present)" : " (absent): index is multiplied by 0");
 
-    var idx = r.index;
-    var lvl = idx < 0.33 ? 'low' : (idx < 0.66 ? 'medium' : 'high');
-    var lvlText = { low: 'Low', medium: 'Medium', high: 'High' }[lvl];
+          var msg;
+          if (!s.water) {
+            msg =
+              "No standing water at this point means no breeding site, so the index is zero whatever the temperature.";
+          } else if (r.fTw === 0) {
+            msg =
+              "Water temperature is outside the range where larvae develop in this illustrative model, so the index is zero.";
+          } else if (lvl === "low") {
+            msg =
+              "Low: conditions are marginal for larval development at this point.";
+          } else if (lvl === "medium") {
+            msg =
+              "Medium: conditions partly favour larval development. Worth watching the trend over the next week.";
+          } else {
+            msg =
+              "High: conditions favour larval development. A site like this is worth checking, and draining, covering or removing the water if possible.";
+          }
+          el("interp").textContent = msg;
+        }
 
-    el('idx').textContent = idx.toFixed(2);
-    var lv = el('level');
-    lv.textContent = lvlText;
-    lv.setAttribute('data-level', lvl);
-    el('marker').style.left = (idx * 100).toFixed(1) + '%';
-    var m = el('meter');
-    m.setAttribute('aria-valuenow', idx.toFixed(2));
-    m.setAttribute('aria-valuetext', idx.toFixed(2) + ', ' + lvlText);
-
-    [['tw', r.fTw], ['ta', r.fTa], ['rh', r.fRh], ['rn', r.fRn]].forEach(function(p){
-      el('b-' + p[0]).style.width = (p[1] * 100).toFixed(1) + '%';
-      el('v-' + p[0]).textContent = p[1].toFixed(2);
-    });
-    el('water-line').textContent = 'standing water = ' + s.water + (s.water ? ' (present)' : ' (absent): index is multiplied by 0');
-
-    var msg;
-    if (!s.water) {
-      msg = 'No standing water at this point means no breeding site, so the index is zero whatever the temperature.';
-    } else if (r.fTw === 0) {
-      msg = 'Water temperature is outside the range where larvae develop in this illustrative model, so the index is zero.';
-    } else if (lvl === 'low') {
-      msg = 'Low: conditions are marginal for larval development at this point.';
-    } else if (lvl === 'medium') {
-      msg = 'Medium: conditions partly favour larval development. Worth watching the trend over the next week.';
-    } else {
-      msg = 'High: conditions favour larval development. A site like this is worth checking, and draining, covering or removing the water if possible.';
-    }
-    el('interp').textContent = msg;
-  }
-
-  [inp.tw, inp.ta, inp.rh, inp.rn].forEach(function(i){ i.addEventListener('input', update); });
-  [wYes, wNo].forEach(function(i){ i.addEventListener('change', update); });
-  el('reset').addEventListener('click', function(){
-    wYes.checked = true;
-    inp.tw.value = DEFAULTS.tw; inp.ta.value = DEFAULTS.ta;
-    inp.rh.value = DEFAULTS.rh; inp.rn.value = DEFAULTS.rain;
-    update();
-  });
-  update();
-})();
-</script>
-</body>
+        [inp.tw, inp.ta, inp.rh, inp.rn].forEach(function (i) {
+          i.addEventListener("input", update);
+        });
+        [wYes, wNo].forEach(function (i) {
+          i.addEventListener("change", update);
+        });
+        el("reset").addEventListener("click", function () {
+          wYes.checked = true;
+          inp.tw.value = DEFAULTS.tw;
+          inp.ta.value = DEFAULTS.ta;
+          inp.rh.value = DEFAULTS.rh;
+          inp.rn.value = DEFAULTS.rain;
+          update();
+        });
+        update();
+      })();
+    </script>
+  </body>
 </html>
